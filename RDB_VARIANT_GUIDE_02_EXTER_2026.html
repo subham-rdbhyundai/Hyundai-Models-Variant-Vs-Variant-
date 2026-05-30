@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyundai Exter · Variant Guide · RDB Hyundai 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+  --navy:#002C5F;--blue:#1A5FA3;--gold:#C4973A;--gold2:#F5E8CE;--gold3:#7A5C1A;
+  --ink:#0C1520;--ink2:#2C3E50;--ink3:#5A6A7A;
+  --paper:#F7F9FC;--card:#fff;--border:#E2EAF3;
+  --green:#1A6630;--green2:#E8F5EC;
+  --red:#B71C1C;--red2:#FFF0F0;
+  --amber:#B8760A;--amber2:#FFFBF0;
+  --stripe:#F4F8FF;--r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* HEADER */
+.header{background:linear-gradient(150deg,#001020 0%,var(--navy) 55%,#0A3A80 100%);padding:44px 32px 40px;position:relative;overflow:hidden;}
+.header::after{content:attr(data-ghost);position:absolute;right:-10px;bottom:-30px;font-family:'Cormorant Garamond',serif;font-size:220px;font-weight:700;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none;}
+.header-inner{max-width:1100px;margin:0 auto;}
+.header-eye{font-size:10px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.header-eye::before{content:'';width:24px;height:1px;background:var(--gold);}
+.header h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#fff;line-height:1.0;margin-bottom:10px;letter-spacing:-1px;}
+.header h1 em{color:var(--gold);font-style:italic;}
+.header-sub{font-size:15px;font-weight:300;color:rgba(180,210,255,0.65);max-width:540px;margin-bottom:24px;}
+.header-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.hpill{padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.75);}
+.hpill.gold{background:rgba(196,151,58,0.15);border-color:rgba(196,151,58,0.35);color:var(--gold);}
+
+/* TIMESTAMP */
+.timestamp{background:#F0F4FA;border-bottom:1px solid var(--border);padding:9px 32px;font-size:12px;color:var(--ink3);display:flex;align-items:center;gap:8px;}
+.timestamp span{font-weight:600;color:var(--ink2);}
+
+/* BODY */
+.body{max-width:1100px;margin:0 auto;padding:28px 20px 60px;}
+
+/* QUICK NAV */
+.qnav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.qnav a{padding:7px 18px;border-radius:100px;font-size:12.5px;font-weight:600;text-decoration:none;background:var(--card);border:1.5px solid var(--border);color:var(--navy);transition:all 0.15s;}
+.qnav a:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* SPEC STRIP */
+.spec-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:24px;}
+.spec-cell{background:var(--card);padding:18px 16px;text-align:center;}
+.spec-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:3px;}
+.spec-lbl{font-size:11px;color:var(--ink3);margin-bottom:2px;}
+.spec-note{font-size:10px;color:var(--ink3);opacity:0.7;}
+
+/* SECTION */
+.section{margin-bottom:36px;scroll-margin-top:20px;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold3);margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border);}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.sec-sub{font-size:13px;color:var(--ink3);margin-bottom:16px;}
+
+/* VARIANT BLOCK — top variant full list */
+.v-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;box-shadow:0 2px 16px rgba(0,44,95,0.05);}
+.v-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.v-head.top{background:var(--navy);}
+.v-head.top .v-name{color:#fff;}
+.v-head.top .v-tag{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.top .v-price{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);}
+.v-head.mid{background:#EEF3FA;}
+.v-head.mid .v-name{color:var(--navy);}
+.v-head.mid .v-tag{color:var(--ink3);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.mid .v-price{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--navy);}
+.v-name{font-size:18px;font-weight:700;}
+.v-info{display:flex;flex-direction:column;}
+.v-sub{font-size:12px;color:rgba(180,210,255,0.5);margin-top:2px;}
+.v-head.mid .v-sub{color:var(--ink3);}
+
+/* CAT HEADING inside variant */
+.cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);padding:7px 22px 5px;background:#F8FAFB;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+
+/* FEATURE ROW — full list (top variant) */
+.f-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.f-row:last-child{border-bottom:none;}
+.f-tick{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--green2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.f-tick svg{width:10px;height:10px;stroke:var(--green);stroke-width:2.5;fill:none;}
+.f-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.f-note{font-size:11.5px;color:var(--ink3);margin-top:2px;line-height:1.4;}
+
+/* MISSING BLOCK — what's lost vs variant above */
+.missing-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;}
+.missing-intro{padding:10px 22px;background:#FFF8F0;border-bottom:1px solid #FFE4C4;font-size:12px;color:#7A4A00;display:flex;align-items:center;gap:8px;}
+.missing-intro strong{color:#B8600A;}
+.m-cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);padding:7px 22px 5px;background:#FFF8F8;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.m-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.m-row:last-child{border-bottom:none;}
+.m-cross{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--red2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.m-cross svg{width:9px;height:9px;stroke:var(--red);stroke-width:2.5;fill:none;}
+.m-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.m-note{font-size:11.5px;color:var(--red);margin-top:2px;line-height:1.4;font-weight:500;}
+
+/* VERDICT */
+.verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+.v-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:18px 16px;position:relative;overflow:hidden;}
+.v-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--blue));}
+.v-card.best::before{background:linear-gradient(90deg,var(--gold),var(--gold3));}
+.v-card.best{border-color:rgba(196,151,58,0.3);background:var(--gold2);}
+.vc-variant{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;}
+.v-card.best .vc-variant{color:var(--gold3);}
+.vc-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;line-height:1.2;}
+.vc-body{font-size:12px;color:var(--ink3);line-height:1.6;}
+.vc-price{font-size:14px;font-weight:700;color:var(--navy);margin-top:8px;}
+
+/* TIP */
+.tip-box{background:var(--amber2);border:1.5px solid rgba(184,118,10,0.2);border-radius:var(--r);padding:14px 18px;font-size:13px;color:#5D4037;line-height:1.7;margin-bottom:20px;display:flex;gap:10px;}
+
+/* CTA */
+.cta{background:var(--navy);border-radius:var(--r);padding:32px 28px;text-align:center;color:#fff;}
+.cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:6px;}
+.cta h3 em{color:var(--gold);font-style:italic;}
+.cta p{font-size:14px;color:rgba(180,210,255,0.65);margin-bottom:18px;}
+.cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.cta-btn{padding:11px 24px;border-radius:100px;font-size:13.5px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:7px;}
+.cta-btn.p{background:var(--gold);color:#fff;}
+.cta-btn.s{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;}
+.cta-note{font-size:11px;color:rgba(180,210,255,0.3);margin-top:12px;}
+
+/* PRINT */
+@media print{
+  @page{margin:10mm 8mm;size:A4;}
+  .header,.v-head.top,.missing-block,.v-block{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .cta{display:none!important;}
+  body{font-size:10px!important;}
+  .body{padding:0!important;}
+}
+@media(max-width:720px){
+  .header{padding:32px 20px 28px;}
+  .header h1{font-size:36px;}
+  .spec-strip{grid-template-columns:1fr 1fr;}
+  .verdict-grid{grid-template-columns:1fr;}
+  .body{padding:24px 14px 40px;}
+}
+</style>
+</head>
+<body>
+<script>
+
+const MODEL_H1 = "Hyundai<br><em>Exter</em>";
+const GHOST = "EXT";
+const TAGLINE = "2026 Facelift · Micro SUV · 6 Airbags + ESC Standard · 185mm Ground Clearance · Sunroof · Dashcam · Unlimited Warranty";
+const LAST_UPDATED = "May 2026";
+const CITY = "Kolkata";
+const SPEC_NOTE = "1.2L Kappa 4-cyl · 83PS petrol / 69PS CNG · Body: 3815mm × 1710mm × 1631mm · Boot: 391L petrol · Ground clearance: 185mm · 3 years unlimited km warranty.";
+const SPECS=[{val:"₹5.64L",lbl:"Starts From",note:"HX2 Petrol MT"},{val:"391L",lbl:"Boot Space",note:"Petrol · 185mm GC"},{val:"27.1",lbl:"km/kg CNG",note:"ARAI · Dual cylinder"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
+const BADGES=[{text:"7 Variants · 2026 Facelift",gold:true},{text:"6 Airbags + ESC — All Variants"},{text:"Sunroof from HX6"},{text:"BlueLink Only on HX10"},{text:"Kolkata ex-showroom · May 2026"}];
+
+const G1={icon:"⛽",label:"Petrol MT",title:"Petrol — Manual Gearbox",sub:"83PS · 19.40 kmpl ARAI · 5-speed MT · Start with HX10, work down",
+variants:[
+  {name:"HX10 (SX O Connect) MT",sub:"Top petrol manual · Complete feature set",price:"₹9.09L",
+   features:[
+    {cat:"Price & Engine",name:"Engine",note:"1.2L Kappa 4-cyl · 83PS / 114Nm · 19.40 kmpl ARAI"},
+    {cat:"Safety",name:"6 Airbags",note:"Driver · Co-driver · Side · Curtain — all variants"},
+    {cat:"Safety",name:"ESC + Hill-Start Assist",note:"Electronic stability control — all variants in 2026 Exter"},
+    {cat:"Safety",name:"ABS + EBD + TPMS",note:"Full braking safety + tyre pressure monitoring"},
+    {cat:"Safety",name:"Rear Parking Camera",note:"Camera image on screen when reversing"},
+    {cat:"Safety",name:"Side Parking Sensors",note:"Sensors on sides help with tight parking gaps"},
+    {cat:"Safety",name:"ISOFIX Child Seat Mounts",note:"Secure attachment for child car seats"},
+    {cat:"Safety",name:"Built-in Dashcam",note:"Records front and interior — segment first. Evidence in accidents."},
+    {cat:"Safety",name:"360° Surround Camera",note:"Bird's eye view of car from all four sides — tight parking made easy"},
+    {cat:"Comfort",name:"Auto Climate Control",note:"Set temperature — car maintains it automatically"},
+    {cat:"Comfort",name:"Rear AC Vents",note:"Direct airflow for rear passengers — all variants"},
+    {cat:"Comfort",name:"Electric Sunroof",note:"Open the sky above you — fresh air and open-cabin feel"},
+    {cat:"Comfort",name:"Keyless Entry + Push Button Start",note:"Walk up, press button — no key insertion needed"},
+    {cat:"Comfort",name:"Cruise Control",note:"Highway constant speed — feet off accelerator"},
+    {cat:"Comfort",name:"Wireless Phone Charger",note:"Charge phone without plugging in a cable"},
+    {cat:"Comfort",name:"Cooled Glovebox",note:"Mini fridge for water bottles and snacks"},
+    {cat:"Comfort",name:"Tilt Steering",note:"Adjust steering angle for driving comfort"},
+    {cat:"Comfort",name:"Foldable Centre Armrest",note:"Flip up when not needed — more front seat flexibility"},
+    {cat:"Comfort",name:"Rear USB Type-C Charging",note:"Rear passengers can charge their phones too"},
+    {cat:"Infotainment",name:"8-inch Touchscreen",note:"Full infotainment with navigation"},
+    {cat:"Infotainment",name:"Wireless Android Auto + CarPlay",note:"Phone mirroring wirelessly — via wired-to-wireless adapter"},
+    {cat:"Infotainment",name:"BlueLink Connected Car (60+ features)",note:"Remote start · live tracking · geo-fence · OTA updates · health reports"},
+    {cat:"Infotainment",name:"OTA Map + Software Updates",note:"Maps and software update over the air — no service visit needed"},
+    {cat:"Infotainment",name:"300+ Offline Voice Commands",note:"Works even without internet — control car with voice"},
+    {cat:"Infotainment",name:"4 Speakers + Bluetooth",note:"Full cabin audio"},
+    {cat:"Exterior",name:"H-shape LED DRLs",note:"Distinctive signature lighting — recognisable from a distance"},
+    {cat:"Exterior",name:"LED Projector Headlamps",note:"Sharp, bright LED beams"},
+    {cat:"Exterior",name:"LED Fog Lamps",note:"LED fog lights for heavy rain and fog"},
+    {cat:"Exterior",name:"15-inch Diamond-cut Alloy Wheels",note:"Premium diamond-cut dual-tone alloy wheels"},
+    {cat:"Exterior",name:"Power + Folding ORVMs",note:"Electric adjust + fold-in mirrors"},
+    {cat:"Exterior",name:"Rear Wiper + Washer + Defogger",note:"Clear rear glass in rain and winter"},
+    {cat:"Exterior",name:"Dual-Tone Paint Option",note:"Two-colour body with contrasting roof"},
+    {cat:"Exterior",name:"Auto Headlamps",note:"Headlamps turn on automatically in dark"},
+    {cat:"Interior",name:"Semi-Leatherette Seats",note:"Premium leatherette-look seat upholstery"},
+    {cat:"Interior",name:"Leather-Wrapped Steering Wheel",note:"Soft-touch premium steering grip"},
+    {cat:"Interior",name:"Semi-Digital Instrument Cluster",note:"Modern display for speed, fuel and trip info"},
+    {cat:"Interior",name:"Footwell Lighting",note:"Ambient light at your feet — premium feel at night"},
+    {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
+   ]},
+  {name:"HX8 (SX O) MT",sub:"Step down from HX10 — ₹8.32L",price:"₹8.32L",
+   missing:[
+    {cat:"Infotainment",name:"No BlueLink / No OTA Updates",note:"No remote start, no live tracking, no geo-fence, no over-the-air updates"},
+    {cat:"Infotainment",name:"No 300+ Offline Voice Commands",note:"Voice control not available — must use touchscreen manually"},
+    {cat:"Safety",name:"No 360° Camera",note:"No bird's eye view — parking in tight spots becomes harder"},
+   ]},
+  {name:"HX6 (SX) MT",sub:"Step down from HX8 — ₹7.70L",price:"₹7.70L",
+   missing:[
+    {cat:"Safety",name:"No Built-in Dashcam",note:"No drive recorder — no evidence if you're in an accident"},
+    {cat:"Safety",name:"No Side Parking Sensors",note:"No side sensors — tight parallel parking is guesswork"},
+    {cat:"Comfort",name:"No Wireless Phone Charger",note:"Must plug in a cable to charge — cable clutter every time"},
+    {cat:"Exterior",name:"No Auto Headlamps",note:"Must manually switch headlamps on — easy to forget at dusk"},
+    {cat:"Interior",name:"No Footwell Lighting",note:"No ambient light at feet — cabin feels less premium at night"},
+   ]},
+  {name:"HX4 Plus (S Plus) MT",sub:"Step down from HX6 — ₹7.36L",price:"₹7.36L",
+   missing:[
+    {cat:"Comfort",name:"No Sunroof",note:"No sky opening — cabin feels more closed in, no fresh air option"},
+    {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only — adjust fan speed and temperature yourself"},
+    {cat:"Comfort",name:"No Keyless Entry + Push Start",note:"Must insert key to unlock and start — not keyless"},
+    {cat:"Comfort",name:"No Cruise Control",note:"Must press accelerator constantly on highways"},
+    {cat:"Comfort",name:"No Tilt Steering",note:"Steering column angle is fixed — may not suit all heights"},
+    {cat:"Exterior",name:"15-inch Steel Wheels (not Alloy)",note:"Heavier steel wheels — no premium alloy look"},
+    {cat:"Exterior",name:"No LED Fog Lamps",note:"Halogen fog lamps only — less bright and modern"},
+    {cat:"Interior",name:"No Semi-Leatherette Seats",note:"Standard fabric upholstery — less premium look and feel"},
+   ]},
+  {name:"HX4 (S) MT",sub:"Step down from HX4 Plus — ₹7.13L",price:"₹7.13L",
+   missing:[
+    {cat:"Comfort",name:"No Foldable Centre Armrest",note:"No driver armrest — less comfortable on long drives"},
+    {cat:"Comfort",name:"No Rear USB Type-C",note:"Rear passengers cannot charge phones from the car"},
+   ]},
+  {name:"HX3 (EX O) MT",sub:"Step down from HX4 — ₹6.00L",price:"₹6.00L",
+   missing:[
+    {cat:"Infotainment",name:"No 8-inch Touchscreen",note:"No screen — no navigation, no CarPlay, no Android Auto"},
+    {cat:"Safety",name:"No Rear Parking Camera",note:"No camera — reversing by guesswork and sensors only"},
+    {cat:"Safety",name:"No ISOFIX Child Mounts",note:"Child seats cannot be safely clamped in"},
+    {cat:"Exterior",name:"Smaller 14-inch Steel Wheels",note:"Smaller, heavier steel wheels — less premium appearance"},
+    {cat:"Exterior",name:"No Rear Wiper + Defogger",note:"Rear glass gets dirty in rain with no way to clean it"},
+    {cat:"Exterior",name:"No LED Headlamps — Halogen only",note:"Halogen headlamps — less bright and modern than LED"},
+   ]},
+  {name:"HX2 (EX) MT",sub:"Base variant — ₹5.64L",price:"₹5.64L",
+   missing:[
+    {cat:"Comfort",name:"No Adjustable Rear Headrests",note:"Rear headrests are fixed — may be uncomfortable on longer drives"},
+    {cat:"Exterior",name:"13-inch Steel Wheels",note:"Smallest wheels in the range — basic appearance"},
+    {cat:"Exterior",name:"No Fog Lamps",note:"No fog lamps at all — risky in heavy monsoon or fog"},
+   ]},
+]};
+
+const G2={icon:"🤖",label:"Petrol AMT",title:"Petrol — Automatic (AMT)",sub:"83PS · 19.20 kmpl ARAI · No clutch pedal · Best for city stop-go traffic",
+variants:[
+  {name:"HX10 AMT",sub:"Top auto variant — only variant with BlueLink",price:"₹9.57L",
+   features:[
+    {cat:"All HX10 MT Features",name:"Complete HX10 MT feature set",note:"Every feature listed in HX10 MT above — fully included"},
+    {cat:"AMT Extras",name:"AMT Automatic Gearbox",note:"No clutch pedal — gear changes automatically in traffic"},
+    {cat:"AMT Extras",name:"Paddle Shifters",note:"Manual gear changes behind steering wheel for sporty feel"},
+   ]},
+  {name:"HX8 AMT",sub:"Step down from HX10 AMT — ₹9.07L",price:"₹9.07L",
+   missing:[
+    {cat:"Infotainment",name:"No BlueLink / No OTA Updates",note:"No remote start, no live tracking, no over-the-air updates"},
+    {cat:"Safety",name:"No 360° Camera",note:"No bird's eye parking view"},
+   ]},
+  {name:"HX6 AMT",sub:"Step down from HX8 — ₹8.32L",price:"₹8.32L",
+   missing:[
+    {cat:"Safety",name:"No Dashcam",note:"No drive recorder — no accident evidence"},
+    {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed to charge phone"},
+   ]},
+  {name:"HX4 Plus AMT",sub:"Step down from HX6 — ₹8.00L",price:"₹8.00L",
+   missing:[
+    {cat:"Comfort",name:"No Sunroof",note:"No open-air option — closed cabin feeling"},
+    {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC — adjust yourself"},
+    {cat:"Exterior",name:"Steel Wheels (not Alloy)",note:"Heavier steel wheels — no premium alloy appearance"},
+   ]},
+  {name:"HX4 AMT",sub:"Step down from HX4 Plus — ₹7.78L",price:"₹7.78L",
+   missing:[
+    {cat:"Comfort",name:"No Foldable Centre Armrest",note:"No driver armrest — less comfortable on long drives"},
+    {cat:"Comfort",name:"No Rear USB Type-C",note:"Rear passengers cannot charge phones"},
+   ]},
+]};
+
+const G3={icon:"🌿",label:"CNG",title:"CNG — Hy-CNG Duo (Dual Cylinder)",sub:"69PS CNG / 83PS Petrol · 27.10 km/kg ARAI · Dual cylinder preserves more boot space than single cyl kits",
+variants:[
+  {name:"SX Tech Dual CNG",sub:"Top CNG variant — full features",price:"₹8.85L",
+   features:[
+    {cat:"Fuel",name:"Bi-fuel CNG + Petrol",note:"Switch between CNG and petrol — never stuck without fuel"},
+    {cat:"Fuel",name:"27.10 km/kg ARAI CNG mileage",note:"At ₹90/kg CNG → ~₹3.32/km running cost vs ₹9+/km petrol"},
+    {cat:"Fuel",name:"Dual Cylinder Hy-CNG",note:"Two cylinders instead of one — preserves more boot space"},
+    {cat:"Safety",name:"6 Airbags + ESC",note:"Full safety — same as petrol variants"},
+    {cat:"Safety",name:"Rear Parking Camera + TPMS",note:"Camera and tyre pressure monitoring"},
+    {cat:"Comfort",name:"Sunroof",note:"Open roof — even on CNG"},
+    {cat:"Comfort",name:"Auto Climate Control",note:"Set and forget temperature"},
+    {cat:"Comfort",name:"Keyless Entry + Push Start",note:"Button start — key in pocket"},
+    {cat:"Infotainment",name:"8-inch Touchscreen",note:"Full screen with wireless CarPlay"},
+    {cat:"Infotainment",name:"Wireless CarPlay + Android Auto",note:"No cable needed — wired-to-wireless adapter"},
+    {cat:"Ownership",name:"Running Cost Advantage",note:"Typical 15,000 km/year driver saves ₹50,000–70,000/year over petrol"},
+   ]},
+  {name:"SX Dual Knight Edition CNG",sub:"Step down from SX Tech Dual — ₹8.80L",price:"₹8.80L",
+   missing:[
+    {cat:"Infotainment",name:"No SX Tech features",note:"Slightly fewer tech additions — otherwise same spec as SX Dual with Knight styling"},
+   ]},
+  {name:"SX Dual CNG",sub:"Step down from Knight Edition — ₹8.67L",price:"₹8.67L",
+   missing:[
+    {cat:"Exterior",name:"No Knight Black Styling Pack",note:"Standard colour only — no Knight exclusive black treatment"},
+   ]},
+  {name:"SX Smart Dual CNG",sub:"Step down from SX Dual — ₹8.45L",price:"₹8.45L",
+   missing:[
+    {cat:"Comfort",name:"No Keyless Entry + Push Start",note:"Must insert key to unlock and start"},
+    {cat:"Comfort",name:"No Cruise Control",note:"Must press accelerator on highways"},
+   ]},
+  {name:"S Plus Exec Dual CNG",sub:"Step down from SX Smart — ₹8.23L",price:"₹8.23L",
+   missing:[
+    {cat:"Comfort",name:"No Sunroof",note:"No sky-opening — closed cabin"},
+    {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only"},
+    {cat:"Exterior",name:"Steel Wheels (not Alloy)",note:"No alloy wheels"},
+   ]},
+  {name:"EX Dual CNG",sub:"Base CNG variant — ₹6.95L",price:"₹6.95L",
+   missing:[
+    {cat:"Infotainment",name:"No Touchscreen",note:"No screen at all — no CarPlay, no Android Auto"},
+    {cat:"Comfort",name:"No Rear AC Vents properly",note:"Basic comfort package only"},
+   ]},
+]};
+
+const GROUPS=[G1,G2,G3];
+const VERDICT_INTRO="Five clear picks across the 2026 Exter range.";
+const VERDICTS=[
+  {label:"Entry SUV",title:"HX2 MT",body:"6 airbags, ESC, rear AC vents, H-shape DRLs. India's safest entry micro SUV — all safety essentials standard.",price:"₹5.64L · Petrol MT",best:false},
+  {label:"Best Value",title:"HX6 MT",body:"Sunroof, auto climate, keyless start, rear camera, cruise, alloy wheels, wireless CarPlay. The Exter sweet spot.",price:"₹7.70L · Petrol MT",best:true},
+  {label:"Auto Pick",title:"HX6 AMT",body:"Everything HX6 MT has — plus AMT automatic. No clutch in city traffic.",price:"₹8.32L · Petrol AMT",best:false},
+  {label:"Maximum Features",title:"HX10 AMT",body:"BlueLink 60+, OTA updates, 360° camera, dashcam, voice commands. The fully connected Exter.",price:"₹9.57L · Petrol AMT",best:false},
+  {label:"Running Cost First",title:"SX Dual CNG",body:"27.10 km/kg. Sunroof, auto climate, keyless, wireless CarPlay. Saves ₹50-70K/year vs petrol for 15,000 km/year drivers.",price:"₹8.67L · CNG MT",best:false},
+];
+const VERDICT_TIP="<strong>Sunroof is a must?</strong> → HX6 MT at ₹7.70L. Auto transmission → HX6 AMT at ₹8.32L. High mileage daily commute → SX Dual CNG at ₹8.67L. No touchscreen needed → HX3 at ₹6.00L — still gets 6 airbags and ESC.";
+
+</script>
+<script>
+
+const TICK = `<div class="f-tick"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>`;
+const CROSS = `<div class="m-cross"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>`;
+
+function renderTopVariant(v) {
+  let cats = {};
+  v.features.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="f-row">${TICK}<div><div class="f-label">${f.name}</div><div class="f-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="v-block">
+    <div class="v-head top">
+      <div class="v-info"><div class="v-tag">Top Variant</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>${rows}</div>`;
+}
+
+function renderMissingVariant(v, idx) {
+  let cats = {};
+  v.missing.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="m-cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="m-row">${CROSS}<div><div class="m-label">${f.name}</div><div class="m-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="missing-block">
+    <div class="v-head mid">
+      <div class="v-info"><div class="v-tag">Step Down</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>
+    <div class="missing-intro">⬇️ <strong>What you give up</strong> compared to the variant above:</div>
+    ${rows}
+  </div>`;
+}
+
+function renderVerdicts(verdicts) {
+  return `<div class="verdict-grid">${verdicts.map(v =>
+    `<div class="v-card${v.best?' best':''}">
+      <div class="vc-variant">${v.best?'⭐ Best Pick — ':''}${v.label}</div>
+      <div class="vc-title">${v.title}</div>
+      <div class="vc-body">${v.body}</div>
+      <div class="vc-price">${v.price}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderSpec(specs) {
+  return `<div class="spec-strip">${specs.map(s =>
+    `<div class="spec-cell"><div class="spec-val">${s.val}</div><div class="spec-lbl">${s.lbl}</div><div class="spec-note">${s.note}</div></div>`
+  ).join('')}</div>`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  const navLinks = GROUPS.map((g,i) => `<a href="#g${i+1}">${g.icon} ${g.label}</a>`).join('');
+
+  let html = `
+    <div class="header" data-ghost="${GHOST}">
+      <div class="header-inner">
+        <div class="header-eye">RDB Hyundai · Variant Guide · ${LAST_UPDATED}</div>
+        <h1>${MODEL_H1}</h1>
+        <p class="header-sub">${TAGLINE}</p>
+        <div class="header-pills">${BADGES.map(b=>`<div class="hpill${b.gold?' gold':''}">${b.text}</div>`).join('')}</div>
+      </div>
+    </div>
+    <div class="timestamp">🕐 <span>Prices verified: ${LAST_UPDATED}</span> &nbsp;·&nbsp; Ex-showroom ${CITY} &nbsp;·&nbsp; Source: Hyundai India · CardEkho · V3Cars</div>
+    <div class="body">
+      <div class="qnav">${navLinks}<a href="#verdict">🏆 Who Should Buy What</a></div>
+      <div class="section">
+        <div class="sec-label">Engine & Dimensions — Same Across All Variants</div>
+        <div class="sec-title">Core Specifications</div>
+        <p class="sec-sub">${SPEC_NOTE}</p>
+        ${renderSpec(SPECS)}
+      </div>
+  `;
+
+  GROUPS.forEach((g, gi) => {
+    html += `<div class="section" id="g${gi+1}">
+      <div class="sec-label">Group ${gi+1} of ${GROUPS.length}</div>
+      <div class="sec-title">${g.title}</div>
+      <p class="sec-sub">${g.sub}</p>`;
+    g.variants.forEach((v, vi) => {
+      if (vi === 0) html += renderTopVariant(v);
+      else html += renderMissingVariant(v, vi);
+    });
+    html += `</div>`;
+  });
+
+  html += `<div class="section" id="verdict">
+    <div class="sec-label">The Bottom Line</div>
+    <div class="sec-title">Who Should Buy Which Variant?</div>
+    <p class="sec-sub">${VERDICT_INTRO}</p>
+    ${renderVerdicts(VERDICTS)}
+    <div class="tip-box"><div>💡</div><div>${VERDICT_TIP}</div></div>
+  </div>
+  <div class="cta">
+    <h3>Not sure which variant suits <em>you?</em></h3>
+    <p>Our team will help based on your budget, daily usage, and driving needs.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919230001414" class="cta-btn p">📱 WhatsApp Us</a>
+      <a href="https://automateforms.ai/form/c418dacf-dc15-45b4-94c2-52ff0a7b785f" class="cta-btn s">📅 Book a Test Drive</a>
+    </div>
+    <div class="cta-note">RD Motors Pvt Ltd · RDB Hyundai · +91 92300 01414 · www.rdb.hyundaimotor.in · ${CITY} prices · ${LAST_UPDATED}</div>
+  </div>
+  </div>`;
+
+  app.innerHTML = html;
+});
+
+</script>
+<div id="app"></div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyundai Ioniq 5 · Variant Guide · RDB Hyundai 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+  --navy:#002C5F;--blue:#1A5FA3;--gold:#C4973A;--gold2:#F5E8CE;--gold3:#7A5C1A;
+  --ink:#0C1520;--ink2:#2C3E50;--ink3:#5A6A7A;
+  --paper:#F7F9FC;--card:#fff;--border:#E2EAF3;
+  --green:#1A6630;--green2:#E8F5EC;
+  --red:#B71C1C;--red2:#FFF0F0;
+  --amber:#B8760A;--amber2:#FFFBF0;
+  --stripe:#F4F8FF;--r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* HEADER */
+.header{background:linear-gradient(150deg,#001020 0%,var(--navy) 55%,#0A3A80 100%);padding:44px 32px 40px;position:relative;overflow:hidden;}
+.header::after{content:attr(data-ghost);position:absolute;right:-10px;bottom:-30px;font-family:'Cormorant Garamond',serif;font-size:220px;font-weight:700;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none;}
+.header-inner{max-width:1100px;margin:0 auto;}
+.header-eye{font-size:10px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.header-eye::before{content:'';width:24px;height:1px;background:var(--gold);}
+.header h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#fff;line-height:1.0;margin-bottom:10px;letter-spacing:-1px;}
+.header h1 em{color:var(--gold);font-style:italic;}
+.header-sub{font-size:15px;font-weight:300;color:rgba(180,210,255,0.65);max-width:540px;margin-bottom:24px;}
+.header-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.hpill{padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.75);}
+.hpill.gold{background:rgba(196,151,58,0.15);border-color:rgba(196,151,58,0.35);color:var(--gold);}
+
+/* TIMESTAMP */
+.timestamp{background:#F0F4FA;border-bottom:1px solid var(--border);padding:9px 32px;font-size:12px;color:var(--ink3);display:flex;align-items:center;gap:8px;}
+.timestamp span{font-weight:600;color:var(--ink2);}
+
+/* BODY */
+.body{max-width:1100px;margin:0 auto;padding:28px 20px 60px;}
+
+/* QUICK NAV */
+.qnav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.qnav a{padding:7px 18px;border-radius:100px;font-size:12.5px;font-weight:600;text-decoration:none;background:var(--card);border:1.5px solid var(--border);color:var(--navy);transition:all 0.15s;}
+.qnav a:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* SPEC STRIP */
+.spec-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:24px;}
+.spec-cell{background:var(--card);padding:18px 16px;text-align:center;}
+.spec-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:3px;}
+.spec-lbl{font-size:11px;color:var(--ink3);margin-bottom:2px;}
+.spec-note{font-size:10px;color:var(--ink3);opacity:0.7;}
+
+/* SECTION */
+.section{margin-bottom:36px;scroll-margin-top:20px;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold3);margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border);}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.sec-sub{font-size:13px;color:var(--ink3);margin-bottom:16px;}
+
+/* VARIANT BLOCK — top variant full list */
+.v-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;box-shadow:0 2px 16px rgba(0,44,95,0.05);}
+.v-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.v-head.top{background:var(--navy);}
+.v-head.top .v-name{color:#fff;}
+.v-head.top .v-tag{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.top .v-price{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);}
+.v-head.mid{background:#EEF3FA;}
+.v-head.mid .v-name{color:var(--navy);}
+.v-head.mid .v-tag{color:var(--ink3);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.mid .v-price{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--navy);}
+.v-name{font-size:18px;font-weight:700;}
+.v-info{display:flex;flex-direction:column;}
+.v-sub{font-size:12px;color:rgba(180,210,255,0.5);margin-top:2px;}
+.v-head.mid .v-sub{color:var(--ink3);}
+
+/* CAT HEADING inside variant */
+.cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);padding:7px 22px 5px;background:#F8FAFB;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+
+/* FEATURE ROW — full list (top variant) */
+.f-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.f-row:last-child{border-bottom:none;}
+.f-tick{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--green2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.f-tick svg{width:10px;height:10px;stroke:var(--green);stroke-width:2.5;fill:none;}
+.f-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.f-note{font-size:11.5px;color:var(--ink3);margin-top:2px;line-height:1.4;}
+
+/* MISSING BLOCK — what's lost vs variant above */
+.missing-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;}
+.missing-intro{padding:10px 22px;background:#FFF8F0;border-bottom:1px solid #FFE4C4;font-size:12px;color:#7A4A00;display:flex;align-items:center;gap:8px;}
+.missing-intro strong{color:#B8600A;}
+.m-cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);padding:7px 22px 5px;background:#FFF8F8;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.m-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.m-row:last-child{border-bottom:none;}
+.m-cross{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--red2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.m-cross svg{width:9px;height:9px;stroke:var(--red);stroke-width:2.5;fill:none;}
+.m-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.m-note{font-size:11.5px;color:var(--red);margin-top:2px;line-height:1.4;font-weight:500;}
+
+/* VERDICT */
+.verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+.v-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:18px 16px;position:relative;overflow:hidden;}
+.v-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--blue));}
+.v-card.best::before{background:linear-gradient(90deg,var(--gold),var(--gold3));}
+.v-card.best{border-color:rgba(196,151,58,0.3);background:var(--gold2);}
+.vc-variant{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;}
+.v-card.best .vc-variant{color:var(--gold3);}
+.vc-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;line-height:1.2;}
+.vc-body{font-size:12px;color:var(--ink3);line-height:1.6;}
+.vc-price{font-size:14px;font-weight:700;color:var(--navy);margin-top:8px;}
+
+/* TIP */
+.tip-box{background:var(--amber2);border:1.5px solid rgba(184,118,10,0.2);border-radius:var(--r);padding:14px 18px;font-size:13px;color:#5D4037;line-height:1.7;margin-bottom:20px;display:flex;gap:10px;}
+
+/* CTA */
+.cta{background:var(--navy);border-radius:var(--r);padding:32px 28px;text-align:center;color:#fff;}
+.cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:6px;}
+.cta h3 em{color:var(--gold);font-style:italic;}
+.cta p{font-size:14px;color:rgba(180,210,255,0.65);margin-bottom:18px;}
+.cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.cta-btn{padding:11px 24px;border-radius:100px;font-size:13.5px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:7px;}
+.cta-btn.p{background:var(--gold);color:#fff;}
+.cta-btn.s{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;}
+.cta-note{font-size:11px;color:rgba(180,210,255,0.3);margin-top:12px;}
+
+/* PRINT */
+@media print{
+  @page{margin:10mm 8mm;size:A4;}
+  .header,.v-head.top,.missing-block,.v-block{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .cta{display:none!important;}
+  body{font-size:10px!important;}
+  .body{padding:0!important;}
+}
+@media(max-width:720px){
+  .header{padding:32px 20px 28px;}
+  .header h1{font-size:36px;}
+  .spec-strip{grid-template-columns:1fr 1fr;}
+  .verdict-grid{grid-template-columns:1fr;}
+  .body{padding:24px 14px 40px;}
+}
+</style>
+</head>
+<body>
+<script>
+
+const MODEL_H1="Hyundai<br><em>Ioniq 5</em>";const GHOST="IONIQ";
+const TAGLINE="World Car of the Year 2022 · 690km ARAI Range · 800V Ultra-Fast 18-Min Charge · Flat Floor Lounge · V2L + V2G";
+const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const SPEC_NOTE="Single variant. 84kWh battery, RWD, 218PS / 350Nm. 800V charging — 10–80% in 18 minutes on 220kW DC charger. 5-Star Euro NCAP. 2026 facelift with dual 12.3-inch ccNC screens.";
+const SPECS=[{val:"690km",lbl:"ARAI Range",note:"Real world ~560–620km"},{val:"18 min",lbl:"10–80% Charge",note:"800V · 220kW DC charger"},{val:"218PS",lbl:"Motor Power",note:"350Nm · RWD"},{val:"5-Star",lbl:"Euro NCAP",note:"Premium safety certified"}];
+const BADGES=[{text:"₹55.70L",gold:true},{text:"World Car of the Year 2022"},{text:"800V Ultra-Fast Charging"},{text:"V2L + V2G"},{text:"Flat Floor Lounge Cabin"},{text:"Dual 12.3-inch ccNC Screens"}];
+
+const G1={icon:"⚡",label:"All Features",title:"Ioniq 5 84kWh RWD — Complete Feature List",sub:"Single variant only · Fully loaded as standard · ₹55.70L",
+variants:[
+  {name:"Ioniq 5 84kWh RWD",sub:"Single variant · World's most awarded EV · Everything included",price:"₹55.70L",
+   features:[
+    {cat:"Battery & Range",name:"84kWh Battery",note:"690km ARAI range · Real world ~560–620km with normal driving"},
+    {cat:"Battery & Range",name:"V2L — Vehicle to Load (3.6kW)",note:"Power your TV, laptop, fan, or any appliance directly from the car battery"},
+    {cat:"Battery & Range",name:"V2G — Vehicle to Grid",note:"Bi-directional grid support — your car can give power back to your home or grid"},
+    {cat:"Charging",name:"800V Ultra-Fast Charging System",note:"Maximum 220kW DC input — fastest charging system in India at this price"},
+    {cat:"Charging",name:"10–80% in ~18 Minutes",note:"On compatible 220kW DC charger — fastest in class · range for a full day added in a coffee break"},
+    {cat:"Charging",name:"11kW AC Home Charging",note:"Full charge overnight — wake up every morning to a full 690km battery"},
+    {cat:"Awards",name:"World Car of the Year 2022",note:"First car ever to win World Car · World EV · World Car Design simultaneously — in the same year"},
+    {cat:"Safety",name:"5-Star Euro NCAP",note:"Europe's most rigorous crash test — certified"},
+    {cat:"Safety",name:"Full ADAS Suite",note:"Forward collision · lane keep · blind spot · rear cross traffic · adaptive cruise control"},
+    {cat:"Safety",name:"6 Airbags",note:"Driver · co-driver · side · curtain — all standard"},
+    {cat:"Safety",name:"ABS + ESC + Hill-Start + TPMS",note:"Full safety electronics"},
+    {cat:"Safety",name:"360° Surround Camera",note:"Bird's eye parking view from all 4 sides"},
+    {cat:"Cabin",name:"Flat Floor — No Transmission Tunnel",note:"E-GMP dedicated EV platform has no prop shaft — entire floor is flat · feels like a premium lounge"},
+    {cat:"Cabin",name:"Sliding Rear Seats",note:"Rear passengers can slide their seats back for more legroom — unique to Ioniq 5"},
+    {cat:"Cabin",name:"Reclining Rear Seats",note:"Rear seatback can recline — like a first-class seat for rear passengers"},
+    {cat:"Comfort",name:"Auto Climate Control (Heat Pump)",note:"Heat pump efficient in cold — preserves more range in winter than resistive heaters"},
+    {cat:"Comfort",name:"Push Button Start + Keyless Entry",note:"Flush door handles that pop out — no protruding handles"},
+    {cat:"Comfort",name:"Wireless Phone Charger",note:"Two wireless charging pads — front passengers each get one"},
+    {cat:"Comfort",name:"Ventilated + Heated Front Seats",note:"Cool in summer · warm in winter — dual function"},
+    {cat:"Comfort",name:"Heated Rear Seats",note:"Rear passengers also get heated seats — premium care for all"},
+    {cat:"Comfort",name:"Electric Adjustable Driver + Passenger Seats",note:"Powered multi-way seat adjustment both front seats"},
+    {cat:"Infotainment",name:"Dual 12.3-inch ccNC Screens",note:"2026 facelift's new curved cockpit — infotainment and driver display in one seamless curved unit"},
+    {cat:"Infotainment",name:"Wireless Android Auto + CarPlay",note:"No cable needed"},
+    {cat:"Infotainment",name:"Bose Premium Audio",note:"Premium Bose surround sound system"},
+    {cat:"Infotainment",name:"Built-in Navigation with OTA Updates",note:"Maps update over the air — always current"},
+    {cat:"Infotainment",name:"BlueLink Connected Car",note:"Remote features · health reports · charging management"},
+    {cat:"Exterior",name:"Parametric Pixel LED Headlamps",note:"Distinctive pixel-pattern LED signature — instantly recognisable worldwide"},
+    {cat:"Exterior",name:"Flush Pop-Out Door Handles",note:"Handles retract flush when not in use — aerodynamic and unique design"},
+    {cat:"Exterior",name:"20-inch Alloy Wheels",note:"Large 20-inch alloys — one of the biggest on any Indian car at this price"},
+    {cat:"Exterior",name:"Colours",note:"Atlas White · Gravity Gold Matte · Abyss Black · Digital Teal · Lucid Blue"},
+    {cat:"Ownership",name:"Car Warranty",note:"3 years · Unlimited kilometres"},
+    {cat:"Ownership",name:"Battery Warranty",note:"8 years / 160,000km — industry leading"},
+    {cat:"Ownership",name:"Running Cost",note:"~₹1.00–1.50/km on home charging vs ₹9+/km petrol · saves ₹1–1.5 lakh/year at 15,000 km"},
+   ]},
+]};
+
+const GROUPS=[G1];
+const VERDICT_INTRO="One variant. One choice. Simply decide if it's right for you.";
+const VERDICTS=[
+  {label:"The Only Option",title:"Ioniq 5 84kWh",body:"690km ARAI range. 18-minute fast charge. V2L power export. Flat floor lounge. Dual 12.3-inch screens. Bose audio. Heated + ventilated seats. 5-Star Euro NCAP. World Car of the Year 2022. Nothing comparable at this price.",price:"₹55.70L · Single Variant",best:true},
+];
+const VERDICT_TIP="The Ioniq 5 has no variant choices to make — it arrives fully loaded. The only decision is colour. Contact RDB Hyundai for a personalised extended test drive experience — this car needs to be experienced, not just read about.";
+
+</script>
+<script>
+
+const TICK = `<div class="f-tick"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>`;
+const CROSS = `<div class="m-cross"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>`;
+
+function renderTopVariant(v) {
+  let cats = {};
+  v.features.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="f-row">${TICK}<div><div class="f-label">${f.name}</div><div class="f-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="v-block">
+    <div class="v-head top">
+      <div class="v-info"><div class="v-tag">Top Variant</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>${rows}</div>`;
+}
+
+function renderMissingVariant(v, idx) {
+  let cats = {};
+  v.missing.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="m-cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="m-row">${CROSS}<div><div class="m-label">${f.name}</div><div class="m-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="missing-block">
+    <div class="v-head mid">
+      <div class="v-info"><div class="v-tag">Step Down</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>
+    <div class="missing-intro">⬇️ <strong>What you give up</strong> compared to the variant above:</div>
+    ${rows}
+  </div>`;
+}
+
+function renderVerdicts(verdicts) {
+  return `<div class="verdict-grid">${verdicts.map(v =>
+    `<div class="v-card${v.best?' best':''}">
+      <div class="vc-variant">${v.best?'⭐ Best Pick — ':''}${v.label}</div>
+      <div class="vc-title">${v.title}</div>
+      <div class="vc-body">${v.body}</div>
+      <div class="vc-price">${v.price}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderSpec(specs) {
+  return `<div class="spec-strip">${specs.map(s =>
+    `<div class="spec-cell"><div class="spec-val">${s.val}</div><div class="spec-lbl">${s.lbl}</div><div class="spec-note">${s.note}</div></div>`
+  ).join('')}</div>`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  const navLinks = GROUPS.map((g,i) => `<a href="#g${i+1}">${g.icon} ${g.label}</a>`).join('');
+
+  let html = `
+    <div class="header" data-ghost="${GHOST}">
+      <div class="header-inner">
+        <div class="header-eye">RDB Hyundai · Variant Guide · ${LAST_UPDATED}</div>
+        <h1>${MODEL_H1}</h1>
+        <p class="header-sub">${TAGLINE}</p>
+        <div class="header-pills">${BADGES.map(b=>`<div class="hpill${b.gold?' gold':''}">${b.text}</div>`).join('')}</div>
+      </div>
+    </div>
+    <div class="timestamp">🕐 <span>Prices verified: ${LAST_UPDATED}</span> &nbsp;·&nbsp; Ex-showroom ${CITY} &nbsp;·&nbsp; Source: Hyundai India · CardEkho · V3Cars</div>
+    <div class="body">
+      <div class="qnav">${navLinks}<a href="#verdict">🏆 Who Should Buy What</a></div>
+      <div class="section">
+        <div class="sec-label">Engine & Dimensions — Same Across All Variants</div>
+        <div class="sec-title">Core Specifications</div>
+        <p class="sec-sub">${SPEC_NOTE}</p>
+        ${renderSpec(SPECS)}
+      </div>
+  `;
+
+  GROUPS.forEach((g, gi) => {
+    html += `<div class="section" id="g${gi+1}">
+      <div class="sec-label">Group ${gi+1} of ${GROUPS.length}</div>
+      <div class="sec-title">${g.title}</div>
+      <p class="sec-sub">${g.sub}</p>`;
+    g.variants.forEach((v, vi) => {
+      if (vi === 0) html += renderTopVariant(v);
+      else html += renderMissingVariant(v, vi);
+    });
+    html += `</div>`;
+  });
+
+  html += `<div class="section" id="verdict">
+    <div class="sec-label">The Bottom Line</div>
+    <div class="sec-title">Who Should Buy Which Variant?</div>
+    <p class="sec-sub">${VERDICT_INTRO}</p>
+    ${renderVerdicts(VERDICTS)}
+    <div class="tip-box"><div>💡</div><div>${VERDICT_TIP}</div></div>
+  </div>
+  <div class="cta">
+    <h3>Not sure which variant suits <em>you?</em></h3>
+    <p>Our team will help based on your budget, daily usage, and driving needs.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919230001414" class="cta-btn p">📱 WhatsApp Us</a>
+      <a href="https://automateforms.ai/form/c418dacf-dc15-45b4-94c2-52ff0a7b785f" class="cta-btn s">📅 Book a Test Drive</a>
+    </div>
+    <div class="cta-note">RD Motors Pvt Ltd · RDB Hyundai · +91 92300 01414 · www.rdb.hyundaimotor.in · ${CITY} prices · ${LAST_UPDATED}</div>
+  </div>
+  </div>`;
+
+  app.innerHTML = html;
+});
+
+</script>
+<div id="app"></div>
+</body>
+</html>

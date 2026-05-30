@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyundai Prime HB · Variant Guide · RDB Hyundai 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+  --navy:#002C5F;--blue:#1A5FA3;--gold:#C4973A;--gold2:#F5E8CE;--gold3:#7A5C1A;
+  --ink:#0C1520;--ink2:#2C3E50;--ink3:#5A6A7A;
+  --paper:#F7F9FC;--card:#fff;--border:#E2EAF3;
+  --green:#1A6630;--green2:#E8F5EC;
+  --red:#B71C1C;--red2:#FFF0F0;
+  --amber:#B8760A;--amber2:#FFFBF0;
+  --stripe:#F4F8FF;--r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* HEADER */
+.header{background:linear-gradient(150deg,#001020 0%,var(--navy) 55%,#0A3A80 100%);padding:44px 32px 40px;position:relative;overflow:hidden;}
+.header::after{content:attr(data-ghost);position:absolute;right:-10px;bottom:-30px;font-family:'Cormorant Garamond',serif;font-size:220px;font-weight:700;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none;}
+.header-inner{max-width:1100px;margin:0 auto;}
+.header-eye{font-size:10px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.header-eye::before{content:'';width:24px;height:1px;background:var(--gold);}
+.header h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#fff;line-height:1.0;margin-bottom:10px;letter-spacing:-1px;}
+.header h1 em{color:var(--gold);font-style:italic;}
+.header-sub{font-size:15px;font-weight:300;color:rgba(180,210,255,0.65);max-width:540px;margin-bottom:24px;}
+.header-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.hpill{padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.75);}
+.hpill.gold{background:rgba(196,151,58,0.15);border-color:rgba(196,151,58,0.35);color:var(--gold);}
+
+/* TIMESTAMP */
+.timestamp{background:#F0F4FA;border-bottom:1px solid var(--border);padding:9px 32px;font-size:12px;color:var(--ink3);display:flex;align-items:center;gap:8px;}
+.timestamp span{font-weight:600;color:var(--ink2);}
+
+/* BODY */
+.body{max-width:1100px;margin:0 auto;padding:28px 20px 60px;}
+
+/* QUICK NAV */
+.qnav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.qnav a{padding:7px 18px;border-radius:100px;font-size:12.5px;font-weight:600;text-decoration:none;background:var(--card);border:1.5px solid var(--border);color:var(--navy);transition:all 0.15s;}
+.qnav a:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* SPEC STRIP */
+.spec-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:24px;}
+.spec-cell{background:var(--card);padding:18px 16px;text-align:center;}
+.spec-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:3px;}
+.spec-lbl{font-size:11px;color:var(--ink3);margin-bottom:2px;}
+.spec-note{font-size:10px;color:var(--ink3);opacity:0.7;}
+
+/* SECTION */
+.section{margin-bottom:36px;scroll-margin-top:20px;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold3);margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border);}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.sec-sub{font-size:13px;color:var(--ink3);margin-bottom:16px;}
+
+/* VARIANT BLOCK — top variant full list */
+.v-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;box-shadow:0 2px 16px rgba(0,44,95,0.05);}
+.v-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.v-head.top{background:var(--navy);}
+.v-head.top .v-name{color:#fff;}
+.v-head.top .v-tag{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.top .v-price{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);}
+.v-head.mid{background:#EEF3FA;}
+.v-head.mid .v-name{color:var(--navy);}
+.v-head.mid .v-tag{color:var(--ink3);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.mid .v-price{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--navy);}
+.v-name{font-size:18px;font-weight:700;}
+.v-info{display:flex;flex-direction:column;}
+.v-sub{font-size:12px;color:rgba(180,210,255,0.5);margin-top:2px;}
+.v-head.mid .v-sub{color:var(--ink3);}
+
+/* CAT HEADING inside variant */
+.cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);padding:7px 22px 5px;background:#F8FAFB;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+
+/* FEATURE ROW — full list (top variant) */
+.f-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.f-row:last-child{border-bottom:none;}
+.f-tick{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--green2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.f-tick svg{width:10px;height:10px;stroke:var(--green);stroke-width:2.5;fill:none;}
+.f-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.f-note{font-size:11.5px;color:var(--ink3);margin-top:2px;line-height:1.4;}
+
+/* MISSING BLOCK — what's lost vs variant above */
+.missing-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;}
+.missing-intro{padding:10px 22px;background:#FFF8F0;border-bottom:1px solid #FFE4C4;font-size:12px;color:#7A4A00;display:flex;align-items:center;gap:8px;}
+.missing-intro strong{color:#B8600A;}
+.m-cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);padding:7px 22px 5px;background:#FFF8F8;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.m-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.m-row:last-child{border-bottom:none;}
+.m-cross{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--red2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.m-cross svg{width:9px;height:9px;stroke:var(--red);stroke-width:2.5;fill:none;}
+.m-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.m-note{font-size:11.5px;color:var(--red);margin-top:2px;line-height:1.4;font-weight:500;}
+
+/* VERDICT */
+.verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+.v-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:18px 16px;position:relative;overflow:hidden;}
+.v-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--blue));}
+.v-card.best::before{background:linear-gradient(90deg,var(--gold),var(--gold3));}
+.v-card.best{border-color:rgba(196,151,58,0.3);background:var(--gold2);}
+.vc-variant{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;}
+.v-card.best .vc-variant{color:var(--gold3);}
+.vc-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;line-height:1.2;}
+.vc-body{font-size:12px;color:var(--ink3);line-height:1.6;}
+.vc-price{font-size:14px;font-weight:700;color:var(--navy);margin-top:8px;}
+
+/* TIP */
+.tip-box{background:var(--amber2);border:1.5px solid rgba(184,118,10,0.2);border-radius:var(--r);padding:14px 18px;font-size:13px;color:#5D4037;line-height:1.7;margin-bottom:20px;display:flex;gap:10px;}
+
+/* CTA */
+.cta{background:var(--navy);border-radius:var(--r);padding:32px 28px;text-align:center;color:#fff;}
+.cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:6px;}
+.cta h3 em{color:var(--gold);font-style:italic;}
+.cta p{font-size:14px;color:rgba(180,210,255,0.65);margin-bottom:18px;}
+.cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.cta-btn{padding:11px 24px;border-radius:100px;font-size:13.5px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:7px;}
+.cta-btn.p{background:var(--gold);color:#fff;}
+.cta-btn.s{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;}
+.cta-note{font-size:11px;color:rgba(180,210,255,0.3);margin-top:12px;}
+
+/* PRINT */
+@media print{
+  @page{margin:10mm 8mm;size:A4;}
+  .header,.v-head.top,.missing-block,.v-block{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .cta{display:none!important;}
+  body{font-size:10px!important;}
+  .body{padding:0!important;}
+}
+@media(max-width:720px){
+  .header{padding:32px 20px 28px;}
+  .header h1{font-size:36px;}
+  .spec-strip{grid-template-columns:1fr 1fr;}
+  .verdict-grid{grid-template-columns:1fr;}
+  .body{padding:24px 14px 40px;}
+}
+</style>
+</head>
+<body>
+<script>
+
+const MODEL_H1="Hyundai<br><em>Prime HB</em>";const GHOST="HB";
+const TAGLINE="Commercial Taxi Hatchback · Factory CNG · 6 Airbags · 27.32 km/kg · 47 Paise/km · RTO Approved · 5-Year Warranty Option";
+const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const SPEC_NOTE="Purpose-built taxi hatchback. CNG factory-fitted and RTO-approved. 80 km/h speed limiter (commercial mandate). 6 airbags standard. Reinforced CNG suspension. Optional 9-inch touchscreen, rear camera and GPS tracker.";
+const SPECS=[{val:"₹5.99L",lbl:"Starting Price",note:"CNG Petrol bi-fuel"},{val:"27.32",lbl:"km/kg CNG",note:"ARAI certified"},{val:"47p",lbl:"Per km Cost",note:"Certified running cost"},{val:"6",lbl:"Airbags",note:"Standard on all"}];
+const BADGES=[{text:"₹5.99L Starting",gold:true},{text:"27.32 km/kg CNG — Segment Best"},{text:"6 Airbags — Standard"},{text:"Factory CNG · RTO Ready"},{text:"5-Year Extended Warranty Option"}];
+
+const G1={icon:"🚖",label:"All Variants",title:"Prime HB — All Variants",sub:"1.2L 4-cyl bi-fuel · 69PS CNG / 83PS petrol · 5-speed MT · Purpose-built for daily taxi operation",
+variants:[
+  {name:"Prime HB CNG",sub:"Recommended for all operators · Best running cost",price:"₹5.99L",
+   features:[
+    {cat:"Fuel & Performance",name:"Factory-Fitted CNG + Petrol Bi-fuel",note:"Switch between CNG and petrol at any time — never stuck without fuel"},
+    {cat:"Fuel & Performance",name:"27.32 km/kg ARAI CNG Mileage",note:"At ₹90/kg CNG → ~₹3.29/km running cost · vs ₹8–9/km on petrol · save ₹500–600/day at 200 km/day"},
+    {cat:"Fuel & Performance",name:"47 Paise/km Certified Running Cost",note:"Hyundai-certified total cost including fuel + maintenance over 1.8 lakh km"},
+    {cat:"Fuel & Performance",name:"Reinforced CNG Suspension",note:"Gas-filled shock absorbers and reinforced springs specifically for CNG weight + full passenger loads"},
+    {cat:"Fuel & Performance",name:"RTO-Approved Commercial Kit",note:"Factory-fit means no dealer kit workarounds — straightforward permit registration from day one"},
+    {cat:"Safety",name:"6 Airbags",note:"Driver · co-driver · side · curtain — all standard. More than WagonR Tour H2 (2 airbags) and Tiago Xpress (2 airbags)"},
+    {cat:"Safety",name:"ABS + EBD",note:"Anti-lock brakes with electronic brakeforce distribution"},
+    {cat:"Safety",name:"80 km/h Speed Limiter",note:"Factory-fitted as required for commercial taxi permits — no after-fitment needed"},
+    {cat:"Safety",name:"Rear Parking Sensors",note:"Distance warning when reversing — all variants"},
+    {cat:"Safety",name:"3-point Seatbelts for All Passengers",note:"Full seatbelt set including rear middle passenger"},
+    {cat:"Comfort",name:"Manual Air Conditioner",note:"AC standard — passengers stay comfortable"},
+    {cat:"Comfort",name:"Rear AC Vents",note:"Direct airflow for rear passengers — key for passenger satisfaction and ratings"},
+    {cat:"Comfort",name:"All 4 Power Windows",note:"All passengers can control their windows — professional feel"},
+    {cat:"Comfort",name:"Driver Seat Height Adjust",note:"Drivers of all heights can set a comfortable position — reduces fatigue on long shifts"},
+    {cat:"Comfort",name:"Steering-Mounted Audio Controls",note:"Driver can control music without removing hands from wheel"},
+    {cat:"Commercial",name:"5-Year Extended Warranty (Optional)",note:"Covers 4th and 5th year or up to 1.8 lakh km — predictable maintenance costs beyond standard 3 years"},
+    {cat:"Commercial",name:"72-Month Finance Tenure",note:"Lower EMI with longer repayment — better for first-time fleet operators"},
+    {cat:"Optional Add-ons",name:"9-inch Touchscreen (Optional)",note:"Wireless Android Auto and Apple CarPlay — improved passenger experience"},
+    {cat:"Optional Add-ons",name:"Rear Camera (Optional)",note:"Camera image when reversing — included with touchscreen pack"},
+    {cat:"Optional Add-ons",name:"GPS Tracker + 4 Panic Buttons (Optional)",note:"Fleet tracking for multi-vehicle operators · panic button for passenger safety"},
+    {cat:"Ownership",name:"Standard Warranty",note:"3 years / 1,00,000km · Extended to 5 years / 1.8 lakh km available"},
+   ]},
+  {name:"Prime HB Petrol",sub:"For areas with limited CNG infrastructure",price:"~₹5.99L",
+   missing:[
+    {cat:"Fuel & Performance",name:"No CNG Fuel Option",note:"Petrol only — running cost ~₹8–9/km vs ~₹3.29/km on CNG · higher fuel bill every single day"},
+    {cat:"Fuel & Performance",name:"No 27.32 km/kg Mileage Advantage",note:"Petrol mileage ~18 kmpl — significantly higher per-km cost than CNG"},
+    {cat:"Commercial",name:"No Fuel Cost Advantage",note:"A 200 km/day operator on petrol spends ₹500–600 more per day than CNG — ₹15,000–18,000 more per month"},
+   ]},
+]};
+
+const GROUPS=[G1];
+const VERDICT_INTRO="Two fuel options — one clear recommendation.";
+const VERDICTS=[
+  {label:"All Operators",title:"Prime HB CNG",body:"27.32 km/kg. Factory RTO-approved. 6 airbags. 47 paise/km. Save ₹500–600/day over petrol at 200 km/day. Add optional GPS and touchscreen for better passenger experience.",price:"₹5.99L · CNG",best:true},
+  {label:"Limited CNG Area",title:"Prime HB Petrol",body:"Same 6 airbags, speed limiter, rear AC vents. For operators in areas where CNG infrastructure is not yet available.",price:"~₹5.99L · Petrol",best:false},
+];
+const VERDICT_TIP="<strong>CNG is the clear pick</strong> for any operator running 100+ km/day. The fuel saving alone pays back the car's premium over WagonR Tour H2 in under 12 months — while giving 3× more airbags and a more premium cabin. Always add the optional GPS + panic button for permit compliance and passenger trust.";
+
+</script>
+<script>
+
+const TICK = `<div class="f-tick"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>`;
+const CROSS = `<div class="m-cross"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>`;
+
+function renderTopVariant(v) {
+  let cats = {};
+  v.features.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="f-row">${TICK}<div><div class="f-label">${f.name}</div><div class="f-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="v-block">
+    <div class="v-head top">
+      <div class="v-info"><div class="v-tag">Top Variant</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>${rows}</div>`;
+}
+
+function renderMissingVariant(v, idx) {
+  let cats = {};
+  v.missing.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="m-cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="m-row">${CROSS}<div><div class="m-label">${f.name}</div><div class="m-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="missing-block">
+    <div class="v-head mid">
+      <div class="v-info"><div class="v-tag">Step Down</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>
+    <div class="missing-intro">⬇️ <strong>What you give up</strong> compared to the variant above:</div>
+    ${rows}
+  </div>`;
+}
+
+function renderVerdicts(verdicts) {
+  return `<div class="verdict-grid">${verdicts.map(v =>
+    `<div class="v-card${v.best?' best':''}">
+      <div class="vc-variant">${v.best?'⭐ Best Pick — ':''}${v.label}</div>
+      <div class="vc-title">${v.title}</div>
+      <div class="vc-body">${v.body}</div>
+      <div class="vc-price">${v.price}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderSpec(specs) {
+  return `<div class="spec-strip">${specs.map(s =>
+    `<div class="spec-cell"><div class="spec-val">${s.val}</div><div class="spec-lbl">${s.lbl}</div><div class="spec-note">${s.note}</div></div>`
+  ).join('')}</div>`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  const navLinks = GROUPS.map((g,i) => `<a href="#g${i+1}">${g.icon} ${g.label}</a>`).join('');
+
+  let html = `
+    <div class="header" data-ghost="${GHOST}">
+      <div class="header-inner">
+        <div class="header-eye">RDB Hyundai · Variant Guide · ${LAST_UPDATED}</div>
+        <h1>${MODEL_H1}</h1>
+        <p class="header-sub">${TAGLINE}</p>
+        <div class="header-pills">${BADGES.map(b=>`<div class="hpill${b.gold?' gold':''}">${b.text}</div>`).join('')}</div>
+      </div>
+    </div>
+    <div class="timestamp">🕐 <span>Prices verified: ${LAST_UPDATED}</span> &nbsp;·&nbsp; Ex-showroom ${CITY} &nbsp;·&nbsp; Source: Hyundai India · CardEkho · V3Cars</div>
+    <div class="body">
+      <div class="qnav">${navLinks}<a href="#verdict">🏆 Who Should Buy What</a></div>
+      <div class="section">
+        <div class="sec-label">Engine & Dimensions — Same Across All Variants</div>
+        <div class="sec-title">Core Specifications</div>
+        <p class="sec-sub">${SPEC_NOTE}</p>
+        ${renderSpec(SPECS)}
+      </div>
+  `;
+
+  GROUPS.forEach((g, gi) => {
+    html += `<div class="section" id="g${gi+1}">
+      <div class="sec-label">Group ${gi+1} of ${GROUPS.length}</div>
+      <div class="sec-title">${g.title}</div>
+      <p class="sec-sub">${g.sub}</p>`;
+    g.variants.forEach((v, vi) => {
+      if (vi === 0) html += renderTopVariant(v);
+      else html += renderMissingVariant(v, vi);
+    });
+    html += `</div>`;
+  });
+
+  html += `<div class="section" id="verdict">
+    <div class="sec-label">The Bottom Line</div>
+    <div class="sec-title">Who Should Buy Which Variant?</div>
+    <p class="sec-sub">${VERDICT_INTRO}</p>
+    ${renderVerdicts(VERDICTS)}
+    <div class="tip-box"><div>💡</div><div>${VERDICT_TIP}</div></div>
+  </div>
+  <div class="cta">
+    <h3>Not sure which variant suits <em>you?</em></h3>
+    <p>Our team will help based on your budget, daily usage, and driving needs.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919230001414" class="cta-btn p">📱 WhatsApp Us</a>
+      <a href="https://automateforms.ai/form/c418dacf-dc15-45b4-94c2-52ff0a7b785f" class="cta-btn s">📅 Book a Test Drive</a>
+    </div>
+    <div class="cta-note">RD Motors Pvt Ltd · RDB Hyundai · +91 92300 01414 · www.rdb.hyundaimotor.in · ${CITY} prices · ${LAST_UPDATED}</div>
+  </div>
+  </div>`;
+
+  app.innerHTML = html;
+});
+
+</script>
+<div id="app"></div>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyundai Verna · Variant Guide · RDB Hyundai 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+  --navy:#002C5F;--blue:#1A5FA3;--gold:#C4973A;--gold2:#F5E8CE;--gold3:#7A5C1A;
+  --ink:#0C1520;--ink2:#2C3E50;--ink3:#5A6A7A;
+  --paper:#F7F9FC;--card:#fff;--border:#E2EAF3;
+  --green:#1A6630;--green2:#E8F5EC;
+  --red:#B71C1C;--red2:#FFF0F0;
+  --amber:#B8760A;--amber2:#FFFBF0;
+  --stripe:#F4F8FF;--r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* HEADER */
+.header{background:linear-gradient(150deg,#001020 0%,var(--navy) 55%,#0A3A80 100%);padding:44px 32px 40px;position:relative;overflow:hidden;}
+.header::after{content:attr(data-ghost);position:absolute;right:-10px;bottom:-30px;font-family:'Cormorant Garamond',serif;font-size:220px;font-weight:700;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none;}
+.header-inner{max-width:1100px;margin:0 auto;}
+.header-eye{font-size:10px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.header-eye::before{content:'';width:24px;height:1px;background:var(--gold);}
+.header h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:#fff;line-height:1.0;margin-bottom:10px;letter-spacing:-1px;}
+.header h1 em{color:var(--gold);font-style:italic;}
+.header-sub{font-size:15px;font-weight:300;color:rgba(180,210,255,0.65);max-width:540px;margin-bottom:24px;}
+.header-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.hpill{padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.75);}
+.hpill.gold{background:rgba(196,151,58,0.15);border-color:rgba(196,151,58,0.35);color:var(--gold);}
+
+/* TIMESTAMP */
+.timestamp{background:#F0F4FA;border-bottom:1px solid var(--border);padding:9px 32px;font-size:12px;color:var(--ink3);display:flex;align-items:center;gap:8px;}
+.timestamp span{font-weight:600;color:var(--ink2);}
+
+/* BODY */
+.body{max-width:1100px;margin:0 auto;padding:28px 20px 60px;}
+
+/* QUICK NAV */
+.qnav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.qnav a{padding:7px 18px;border-radius:100px;font-size:12.5px;font-weight:600;text-decoration:none;background:var(--card);border:1.5px solid var(--border);color:var(--navy);transition:all 0.15s;}
+.qnav a:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* SPEC STRIP */
+.spec-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:24px;}
+.spec-cell{background:var(--card);padding:18px 16px;text-align:center;}
+.spec-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:3px;}
+.spec-lbl{font-size:11px;color:var(--ink3);margin-bottom:2px;}
+.spec-note{font-size:10px;color:var(--ink3);opacity:0.7;}
+
+/* SECTION */
+.section{margin-bottom:36px;scroll-margin-top:20px;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold3);margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border);}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.sec-sub{font-size:13px;color:var(--ink3);margin-bottom:16px;}
+
+/* VARIANT BLOCK — top variant full list */
+.v-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;box-shadow:0 2px 16px rgba(0,44,95,0.05);}
+.v-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.v-head.top{background:var(--navy);}
+.v-head.top .v-name{color:#fff;}
+.v-head.top .v-tag{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.top .v-price{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);}
+.v-head.mid{background:#EEF3FA;}
+.v-head.mid .v-name{color:var(--navy);}
+.v-head.mid .v-tag{color:var(--ink3);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;}
+.v-head.mid .v-price{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--navy);}
+.v-name{font-size:18px;font-weight:700;}
+.v-info{display:flex;flex-direction:column;}
+.v-sub{font-size:12px;color:rgba(180,210,255,0.5);margin-top:2px;}
+.v-head.mid .v-sub{color:var(--ink3);}
+
+/* CAT HEADING inside variant */
+.cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);padding:7px 22px 5px;background:#F8FAFB;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+
+/* FEATURE ROW — full list (top variant) */
+.f-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.f-row:last-child{border-bottom:none;}
+.f-tick{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--green2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.f-tick svg{width:10px;height:10px;stroke:var(--green);stroke-width:2.5;fill:none;}
+.f-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.f-note{font-size:11.5px;color:var(--ink3);margin-top:2px;line-height:1.4;}
+
+/* MISSING BLOCK — what's lost vs variant above */
+.missing-block{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px;}
+.missing-intro{padding:10px 22px;background:#FFF8F0;border-bottom:1px solid #FFE4C4;font-size:12px;color:#7A4A00;display:flex;align-items:center;gap:8px;}
+.missing-intro strong{color:#B8600A;}
+.m-cat-hd{font-size:9.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);padding:7px 22px 5px;background:#FFF8F8;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.m-row{display:flex;align-items:flex-start;gap:12px;padding:8px 22px;border-bottom:1px solid var(--border);}
+.m-row:last-child{border-bottom:none;}
+.m-cross{flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--red2);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.m-cross svg{width:9px;height:9px;stroke:var(--red);stroke-width:2.5;fill:none;}
+.m-label{font-size:13px;font-weight:500;color:var(--ink);line-height:1.4;}
+.m-note{font-size:11.5px;color:var(--red);margin-top:2px;line-height:1.4;font-weight:500;}
+
+/* VERDICT */
+.verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+.v-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:18px 16px;position:relative;overflow:hidden;}
+.v-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--blue));}
+.v-card.best::before{background:linear-gradient(90deg,var(--gold),var(--gold3));}
+.v-card.best{border-color:rgba(196,151,58,0.3);background:var(--gold2);}
+.vc-variant{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;}
+.v-card.best .vc-variant{color:var(--gold3);}
+.vc-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;line-height:1.2;}
+.vc-body{font-size:12px;color:var(--ink3);line-height:1.6;}
+.vc-price{font-size:14px;font-weight:700;color:var(--navy);margin-top:8px;}
+
+/* TIP */
+.tip-box{background:var(--amber2);border:1.5px solid rgba(184,118,10,0.2);border-radius:var(--r);padding:14px 18px;font-size:13px;color:#5D4037;line-height:1.7;margin-bottom:20px;display:flex;gap:10px;}
+
+/* CTA */
+.cta{background:var(--navy);border-radius:var(--r);padding:32px 28px;text-align:center;color:#fff;}
+.cta h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:6px;}
+.cta h3 em{color:var(--gold);font-style:italic;}
+.cta p{font-size:14px;color:rgba(180,210,255,0.65);margin-bottom:18px;}
+.cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.cta-btn{padding:11px 24px;border-radius:100px;font-size:13.5px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:7px;}
+.cta-btn.p{background:var(--gold);color:#fff;}
+.cta-btn.s{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;}
+.cta-note{font-size:11px;color:rgba(180,210,255,0.3);margin-top:12px;}
+
+/* PRINT */
+@media print{
+  @page{margin:10mm 8mm;size:A4;}
+  .header,.v-head.top,.missing-block,.v-block{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .cta{display:none!important;}
+  body{font-size:10px!important;}
+  .body{padding:0!important;}
+}
+@media(max-width:720px){
+  .header{padding:32px 20px 28px;}
+  .header h1{font-size:36px;}
+  .spec-strip{grid-template-columns:1fr 1fr;}
+  .verdict-grid{grid-template-columns:1fr;}
+  .body{padding:24px 14px 40px;}
+}
+</style>
+</head>
+<body>
+<script>
+
+const MODEL_H1="Hyundai<br><em>Verna</em>";const GHOST="Verna";
+const TAGLINE="2026 Facelift · India's Most Powerful Midsize Sedan · 160PS Turbo · Level 2 ADAS · Bose · Ventilated Seats · 528L Boot";
+const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const SPEC_NOTE="Two engines: 1.5L NA 115PS (MT/IVT) · 1.5L Turbo GDi 160PS (MT/IVT/DCT). 528L boot — largest in class. 22 variants. 3 yrs unlimited km warranty.";
+const SPECS=[{val:"₹10.98L",lbl:"Starts From",note:"HX2 1.5 NA MT"},{val:"160PS",lbl:"Turbo Power",note:"1.5T · Segment Best"},{val:"528L",lbl:"Boot Space",note:"Largest in class"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
+const BADGES=[{text:"From ₹10.98L",gold:true},{text:"160PS Turbo — Segment Best"},{text:"Level 2 ADAS Available"},{text:"Bose 8-Speaker"},{text:"528L Boot — Segment Largest"},{text:"Kolkata ex-showroom · May 2026"}];
+
+const G1={icon:"🚀",label:"1.5T Turbo",title:"1.5L Turbo Petrol — MT · IVT · DCT",sub:"160PS / 253Nm · Most powerful midsize sedan in India · 16.7–18.4 kmpl ARAI",
+variants:[
+  {name:"HX10 Turbo DCT DT",sub:"Top of the entire Verna range · Dual-tone + everything",price:"₹18.40L",
+   features:[
+    {cat:"Engine",name:"1.5L T-GDi 160PS / 253Nm",note:"Most powerful midsize sedan in India · 7-speed DCT paddle shifts"},
+    {cat:"Engine",name:"Dual-Tone Paint",note:"Two-colour exterior with contrasting roof — exclusive to DT variants"},
+    {cat:"Safety",name:"7 Airbags",note:"7th airbag for driver's knee — exclusive to turbo variants"},
+    {cat:"Safety",name:"Level 2 ADAS",note:"Forward collision · lane keep · blind spot · adaptive cruise — all 16 functions"},
+    {cat:"Safety",name:"ABS + ESC + Hill-Start + TPMS",note:"Full safety electronics"},
+    {cat:"Safety",name:"360° Surround Camera",note:"Bird's eye view from all 4 sides for tight parking"},
+    {cat:"Safety",name:"Rear + Side Parking Sensors",note:"Sensors on all sides"},
+    {cat:"Safety",name:"Built-in Dashcam",note:"Drive recorder — accident evidence"},
+    {cat:"Comfort",name:"Auto Climate Control",note:"Set temperature — maintained automatically"},
+    {cat:"Comfort",name:"Rear AC Vents",note:"Direct airflow for rear passengers"},
+    {cat:"Comfort",name:"Panoramic Sunroof",note:"Large electric sunroof with voice control"},
+    {cat:"Comfort",name:"Push Button Start + Keyless Entry",note:"No key insertion — walk up and go"},
+    {cat:"Comfort",name:"Wireless Phone Charger",note:"No cable — place and charge"},
+    {cat:"Comfort",name:"Ventilated + Heated Front Seats",note:"Cool in summer · warm in winter — dual function"},
+    {cat:"Comfort",name:"Electric 8-way Driver Seat Adjust",note:"Fine-tune driving position with powered seat controls"},
+    {cat:"Comfort",name:"Memory Driver Seat",note:"Saves your seat position — returns to it when you get in"},
+    {cat:"Comfort",name:"Cruise Control + Paddle Shifters",note:"Highway hold + sporty gear override"},
+    {cat:"Infotainment",name:"Dual 10.25-inch Screens",note:"Infotainment + driver display — twin seamless screens"},
+    {cat:"Infotainment",name:"Wireless Android Auto + CarPlay",note:"Mirror phone wirelessly — no cable"},
+    {cat:"Infotainment",name:"Bose 8-Speaker Audio",note:"Premium Bose surround — best audio in the midsize sedan segment"},
+    {cat:"Infotainment",name:"BlueLink Connected Car",note:"Remote start · tracking · OTA updates · health reports"},
+    {cat:"Infotainment",name:"Voice Commands",note:"Control features by voice"},
+    {cat:"Exterior",name:"17-inch Alloy Wheels + Full LED Headlamps",note:"Large alloys + sharp LED headlights"},
+    {cat:"Exterior",name:"Auto Headlamps + ORVM Indicators",note:"Automatic lights + blinkers in wing mirrors"},
+    {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
+   ]},
+  {name:"SX(O) Turbo IVT",sub:"Step down — ₹17.07L",price:"₹17.07L",
+   missing:[
+    {cat:"Engine",name:"IVT CVT (not 7-spd DCT)",note:"Smooth CVT auto — no paddle shifters, no DCT sporty shifts"},
+    {cat:"Exterior",name:"No Dual-Tone Paint",note:"Single colour only — no contrasting roof option"},
+   ]},
+  {name:"SX(O) Turbo MT",sub:"Step down to manual — ₹16.10L",price:"₹16.10L",
+   missing:[
+    {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — must operate clutch in all conditions"},
+   ]},
+  {name:"SX Turbo IVT",sub:"Step down from SX(O) — ₹16.18L",price:"₹16.18L",
+   missing:[
+    {cat:"Safety",name:"No 360° Camera",note:"Rear camera only — no bird's eye view for tight parking"},
+    {cat:"Comfort",name:"No Memory Driver Seat",note:"Seat position doesn't save — must readjust every time"},
+   ]},
+  {name:"SX Turbo MT",sub:"Entry turbo manual — ₹15.21L",price:"₹15.21L",
+   missing:[
+    {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — must use clutch in city traffic"},
+   ]},
+]};
+
+const G2={icon:"⛽",label:"1.5L NA",title:"1.5L NA Petrol — MT & IVT",sub:"115PS / 144Nm · MT 18.6 kmpl · IVT 19.6 kmpl · Smooth daily sedan",
+variants:[
+  {name:"SX+ IVT",sub:"Top NA variant · All features except turbo",price:"₹14.69L",
+   features:[
+    {cat:"Engine",name:"1.5L MPI 115PS / 144Nm",note:"IVT (CVT) automatic · 19.6 kmpl ARAI"},
+    {cat:"Safety",name:"6 Airbags + Level 2 ADAS",note:"Full safety + 16 driver assistance functions"},
+    {cat:"Safety",name:"Rear Camera + Side Sensors + TPMS",note:"Camera and sensors when reversing"},
+    {cat:"Safety",name:"Dashcam",note:"Built-in drive recorder"},
+    {cat:"Comfort",name:"Auto Climate + Rear AC Vents",note:"Set and forget temperature · rear airflow"},
+    {cat:"Comfort",name:"Panoramic Sunroof",note:"Voice-control electric sunroof"},
+    {cat:"Comfort",name:"Push Button Start + Wireless Charger",note:"Keyless start + cable-free charging"},
+    {cat:"Comfort",name:"Ventilated + Heated Front Seats",note:"Cool in summer · warm in winter"},
+    {cat:"Comfort",name:"Electric 8-way Driver Seat",note:"Powered seat adjustment"},
+    {cat:"Infotainment",name:"Dual 10.25-inch Screens",note:"Twin screens — infotainment + driver cluster"},
+    {cat:"Infotainment",name:"Wireless CarPlay + Bose 8-Speaker",note:"No cable + premium Bose sound"},
+    {cat:"Infotainment",name:"BlueLink + Voice Commands",note:"Connected car + voice control"},
+    {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
+   ]},
+  {name:"SX+ MT",sub:"Manual version of SX+ — ₹13.79L",price:"₹13.79L",
+   missing:[
+    {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — must use clutch in city traffic"},
+   ]},
+  {name:"SX IVT",sub:"Step down from SX+ — ₹13.91L",price:"₹13.91L",
+   missing:[
+    {cat:"Comfort",name:"No Ventilated + Heated Seats",note:"Seats do not cool or heat — standard fabric only"},
+    {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed to charge phone"},
+    {cat:"Comfort",name:"No Electric 8-way Driver Seat",note:"Manual seat adjustment only"},
+    {cat:"Safety",name:"No Dashcam",note:"No built-in drive recorder"},
+    {cat:"Infotainment",name:"No Bose Audio",note:"Standard speakers — less immersive sound"},
+    {cat:"Infotainment",name:"No BlueLink",note:"No connected car features"},
+   ]},
+  {name:"SX MT",sub:"Step down — ₹13.35L",price:"₹13.35L",
+   missing:[
+    {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — clutch in city traffic"},
+   ]},
+  {name:"HX4 IVT",sub:"Step down from SX — ₹13.34L",price:"₹13.34L",
+   missing:[
+    {cat:"Safety",name:"No Level 2 ADAS",note:"No forward collision warning, no lane assist — no driver assistance"},
+    {cat:"Comfort",name:"No Sunroof",note:"No open-sky option — closed roof only"},
+    {cat:"Infotainment",name:"8-inch Screen Only (not Dual 10.25-inch)",note:"Single smaller screen · wired CarPlay only"},
+    {cat:"Exterior",name:"16-inch Alloys (not 17-inch)",note:"Smaller alloy wheels — less commanding road presence"},
+   ]},
+  {name:"HX4 MT",sub:"Step down — ₹12.44L",price:"₹12.44L",
+   missing:[
+    {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual"},
+   ]},
+  {name:"HX2 MT",sub:"Base Verna — ₹10.98L",price:"₹10.98L",
+   missing:[
+    {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC — adjust temperature yourself"},
+    {cat:"Comfort",name:"No Push Button Start",note:"Must insert key every time"},
+    {cat:"Safety",name:"No Rear Parking Camera",note:"No camera image when reversing"},
+    {cat:"Exterior",name:"16-inch Steel Wheels (not Alloy)",note:"Heavy steel wheels — no premium alloy appearance"},
+   ]},
+]};
+
+const GROUPS=[G1,G2];
+const VERDICT_INTRO="Five picks across the 2026 Verna range.";
+const VERDICTS=[
+  {label:"Budget Sedan",title:"HX2 MT",body:"6 airbags, 528L boot (largest in class), 18.6 kmpl. The most affordable way into the 2026 Verna.",price:"₹10.98L · 1.5 NA MT",best:false},
+  {label:"Best Value",title:"SX IVT",body:"Level 2 ADAS, sunroof, dual screens, wireless CarPlay, 17-inch alloys, IVT smooth auto. Complete midsize sedan.",price:"₹13.91L · 1.5 NA IVT",best:true},
+  {label:"Full Features NA",title:"SX+ IVT",body:"Adds Bose, ventilated seats, wireless charger, 8-way electric seat, dashcam, BlueLink. Nothing held back on NA engine.",price:"₹14.69L · 1.5 NA IVT",best:false},
+  {label:"Performance Sedan",title:"SX Turbo IVT",body:"160PS — India's most powerful midsize sedan. All premium features + IVT smoothness.",price:"₹16.18L · 1.5T IVT",best:false},
+  {label:"All Turbo Features",title:"HX10 DCT DT",body:"160PS DCT, 7 airbags, 360° camera, memory seat, Bose, heated+ventilated seats, dual-tone paint. The ultimate Verna.",price:"₹18.40L · 1.5T DCT DT",best:false},
+];
+const VERDICT_TIP="<strong>SX IVT at ₹13.91L</strong> — Level 2 ADAS, sunroof, dual screens, smooth CVT, 17-inch alloys at the right price. For a complete no-compromise NA sedan: SX+ IVT at ₹14.69L adds Bose and ventilated seats. For India's most powerful midsize sedan: SX Turbo IVT at ₹16.18L.";
+
+</script>
+<script>
+
+const TICK = `<div class="f-tick"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>`;
+const CROSS = `<div class="m-cross"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>`;
+
+function renderTopVariant(v) {
+  let cats = {};
+  v.features.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="f-row">${TICK}<div><div class="f-label">${f.name}</div><div class="f-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="v-block">
+    <div class="v-head top">
+      <div class="v-info"><div class="v-tag">Top Variant</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>${rows}</div>`;
+}
+
+function renderMissingVariant(v, idx) {
+  let cats = {};
+  v.missing.forEach(f => {
+    if (!cats[f.cat]) cats[f.cat] = [];
+    cats[f.cat].push(f);
+  });
+  let rows = Object.entries(cats).map(([cat, feats]) =>
+    `<div class="m-cat-hd">${cat}</div>` +
+    feats.map(f => `<div class="m-row">${CROSS}<div><div class="m-label">${f.name}</div><div class="m-note">${f.note}</div></div></div>`).join('')
+  ).join('');
+  return `<div class="missing-block">
+    <div class="v-head mid">
+      <div class="v-info"><div class="v-tag">Step Down</div><div class="v-name">${v.name}</div><div class="v-sub">${v.sub}</div></div>
+      <div class="v-price">${v.price}</div>
+    </div>
+    <div class="missing-intro">⬇️ <strong>What you give up</strong> compared to the variant above:</div>
+    ${rows}
+  </div>`;
+}
+
+function renderVerdicts(verdicts) {
+  return `<div class="verdict-grid">${verdicts.map(v =>
+    `<div class="v-card${v.best?' best':''}">
+      <div class="vc-variant">${v.best?'⭐ Best Pick — ':''}${v.label}</div>
+      <div class="vc-title">${v.title}</div>
+      <div class="vc-body">${v.body}</div>
+      <div class="vc-price">${v.price}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderSpec(specs) {
+  return `<div class="spec-strip">${specs.map(s =>
+    `<div class="spec-cell"><div class="spec-val">${s.val}</div><div class="spec-lbl">${s.lbl}</div><div class="spec-note">${s.note}</div></div>`
+  ).join('')}</div>`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  const navLinks = GROUPS.map((g,i) => `<a href="#g${i+1}">${g.icon} ${g.label}</a>`).join('');
+
+  let html = `
+    <div class="header" data-ghost="${GHOST}">
+      <div class="header-inner">
+        <div class="header-eye">RDB Hyundai · Variant Guide · ${LAST_UPDATED}</div>
+        <h1>${MODEL_H1}</h1>
+        <p class="header-sub">${TAGLINE}</p>
+        <div class="header-pills">${BADGES.map(b=>`<div class="hpill${b.gold?' gold':''}">${b.text}</div>`).join('')}</div>
+      </div>
+    </div>
+    <div class="timestamp">🕐 <span>Prices verified: ${LAST_UPDATED}</span> &nbsp;·&nbsp; Ex-showroom ${CITY} &nbsp;·&nbsp; Source: Hyundai India · CardEkho · V3Cars</div>
+    <div class="body">
+      <div class="qnav">${navLinks}<a href="#verdict">🏆 Who Should Buy What</a></div>
+      <div class="section">
+        <div class="sec-label">Engine & Dimensions — Same Across All Variants</div>
+        <div class="sec-title">Core Specifications</div>
+        <p class="sec-sub">${SPEC_NOTE}</p>
+        ${renderSpec(SPECS)}
+      </div>
+  `;
+
+  GROUPS.forEach((g, gi) => {
+    html += `<div class="section" id="g${gi+1}">
+      <div class="sec-label">Group ${gi+1} of ${GROUPS.length}</div>
+      <div class="sec-title">${g.title}</div>
+      <p class="sec-sub">${g.sub}</p>`;
+    g.variants.forEach((v, vi) => {
+      if (vi === 0) html += renderTopVariant(v);
+      else html += renderMissingVariant(v, vi);
+    });
+    html += `</div>`;
+  });
+
+  html += `<div class="section" id="verdict">
+    <div class="sec-label">The Bottom Line</div>
+    <div class="sec-title">Who Should Buy Which Variant?</div>
+    <p class="sec-sub">${VERDICT_INTRO}</p>
+    ${renderVerdicts(VERDICTS)}
+    <div class="tip-box"><div>💡</div><div>${VERDICT_TIP}</div></div>
+  </div>
+  <div class="cta">
+    <h3>Not sure which variant suits <em>you?</em></h3>
+    <p>Our team will help based on your budget, daily usage, and driving needs.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919230001414" class="cta-btn p">📱 WhatsApp Us</a>
+      <a href="https://automateforms.ai/form/c418dacf-dc15-45b4-94c2-52ff0a7b785f" class="cta-btn s">📅 Book a Test Drive</a>
+    </div>
+    <div class="cta-note">RD Motors Pvt Ltd · RDB Hyundai · +91 92300 01414 · www.rdb.hyundaimotor.in · ${CITY} prices · ${LAST_UPDATED}</div>
+  </div>
+  </div>`;
+
+  app.innerHTML = html;
+});
+
+</script>
+<div id="app"></div>
+</body>
+</html>
