@@ -146,11 +146,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 const MODEL_H1 = "Hyundai<br><em>Exter</em>";
 const GHOST = "EXT";
 const TAGLINE = "2026 Facelift · Micro SUV · 6 Airbags + ESC Standard · 185mm Ground Clearance · Sunroof · Dashcam · Unlimited Warranty";
-const LAST_UPDATED = "May 2026";
+const LAST_UPDATED="June 2026";
 const CITY = "Kolkata";
 const SPEC_NOTE = "1.2L Kappa 4-cyl · 83PS petrol / 69PS CNG · Body: 3815mm × 1710mm × 1631mm · Boot: 391L petrol · Ground clearance: 185mm · 3 years unlimited km warranty.";
-const SPECS=[{val:"₹5.64L",lbl:"Starts From",note:"HX2 Petrol MT"},{val:"391L",lbl:"Boot Space",note:"Petrol · 185mm GC"},{val:"27.1",lbl:"km/kg CNG",note:"ARAI · Dual cylinder"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
-const BADGES=[{text:"7 Variants · 2026 Facelift",gold:true},{text:"6 Airbags + ESC — All Variants"},{text:"Sunroof from HX6"},{text:"BlueLink Only on HX10"},{text:"Kolkata ex-showroom · May 2026"}];
+const SPECS=[{val:"₹5.81L",lbl:"Starts From",note:"HX2 Petrol MT"},{val:"391L",lbl:"Boot Space",note:"Petrol · 185mm GC"},{val:"27.1",lbl:"km/kg CNG",note:"ARAI · Dual cylinder"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
+const BADGES=[{text:"7 Variants · 2026 Facelift",gold:true},{text:"6 Airbags + ESC — All Variants"},{text:"Sunroof from HX6"},{text:"BlueLink Only on HX10"},{text:"Kolkata ex-showroom · June 2026"}];
 
 const G1={icon:"⛽",label:"Petrol MT",title:"Petrol — Manual Gearbox",sub:"83PS · 19.40 kmpl ARAI · 5-speed MT · Start with HX10, work down",
 variants:[
@@ -195,13 +195,13 @@ variants:[
     {cat:"Interior",name:"Footwell Lighting",note:"Ambient light at your feet — premium feel at night"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"HX8 (SX O) MT",sub:"Step down from HX10 — ₹8.32L",price:"₹8.32L",
+  {name:"HX8 (SX O) MT",sub:"Step down from HX10 — ₹8.40L",price:"₹8.40L",
    missing:[
     {cat:"Infotainment",name:"No BlueLink / No OTA Updates",note:"No remote start, no live tracking, no geo-fence, no over-the-air updates"},
     {cat:"Infotainment",name:"No 300+ Offline Voice Commands",note:"Voice control not available — must use touchscreen manually"},
     {cat:"Safety",name:"No 360° Camera",note:"No bird's eye view — parking in tight spots becomes harder"},
    ]},
-  {name:"HX6 (SX) MT",sub:"Step down from HX8 — ₹7.70L",price:"₹7.70L",
+  {name:"HX6 (SX) MT",sub:"Step down from HX8 — ₹7.99L",price:"₹7.99L",
    missing:[
     {cat:"Safety",name:"No Built-in Dashcam",note:"No drive recorder — no evidence if you're in an accident"},
     {cat:"Safety",name:"No Side Parking Sensors",note:"No side sensors — tight parallel parking is guesswork"},
@@ -220,12 +220,12 @@ variants:[
     {cat:"Exterior",name:"No LED Fog Lamps",note:"Halogen fog lamps only — less bright and modern"},
     {cat:"Interior",name:"No Semi-Leatherette Seats",note:"Standard fabric upholstery — less premium look and feel"},
    ]},
-  {name:"HX4 (S) MT",sub:"Step down from HX4 Plus — ₹7.13L",price:"₹7.13L",
+  {name:"HX4 (S) MT",sub:"Step down from HX4 Plus — ₹7.28L",price:"₹7.28L",
    missing:[
     {cat:"Comfort",name:"No Foldable Centre Armrest",note:"No driver armrest — less comfortable on long drives"},
     {cat:"Comfort",name:"No Rear USB Type-C",note:"Rear passengers cannot charge phones from the car"},
    ]},
-  {name:"HX3 (EX O) MT",sub:"Step down from HX4 — ₹6.00L",price:"₹6.00L",
+  {name:"HX3 (EX O) MT",sub:"Step down from HX4 — ₹6.30L",price:"₹6.30L",
    missing:[
     {cat:"Infotainment",name:"No 8-inch Touchscreen",note:"No screen — no navigation, no CarPlay, no Android Auto"},
     {cat:"Safety",name:"No Rear Parking Camera",note:"No camera — reversing by guesswork and sensors only"},
@@ -234,7 +234,7 @@ variants:[
     {cat:"Exterior",name:"No Rear Wiper + Defogger",note:"Rear glass gets dirty in rain with no way to clean it"},
     {cat:"Exterior",name:"No LED Headlamps — Halogen only",note:"Halogen headlamps — less bright and modern than LED"},
    ]},
-  {name:"HX2 (EX) MT",sub:"Base variant — ₹5.64L",price:"₹5.64L",
+  {name:"HX2 (EX) MT",sub:"Base variant — ₹5.81L",price:"₹5.81L",
    missing:[
     {cat:"Comfort",name:"No Adjustable Rear Headrests",note:"Rear headrests are fixed — may be uncomfortable on longer drives"},
     {cat:"Exterior",name:"13-inch Steel Wheels",note:"Smallest wheels in the range — basic appearance"},
@@ -244,23 +244,23 @@ variants:[
 
 const G2={icon:"🤖",label:"Petrol AMT",title:"Petrol — Automatic (AMT)",sub:"83PS · 19.20 kmpl ARAI · No clutch pedal · Best for city stop-go traffic",
 variants:[
-  {name:"HX10 AMT",sub:"Top auto variant — only variant with BlueLink",price:"₹9.57L",
+  {name:"HX10 AMT",sub:"Top auto variant — only variant with BlueLink",price:"₹9.61L",
    features:[
     {cat:"All HX10 MT Features",name:"Complete HX10 MT feature set",note:"Every feature listed in HX10 MT above — fully included"},
     {cat:"AMT Extras",name:"AMT Automatic Gearbox",note:"No clutch pedal — gear changes automatically in traffic"},
     {cat:"AMT Extras",name:"Paddle Shifters",note:"Manual gear changes behind steering wheel for sporty feel"},
    ]},
-  {name:"HX8 AMT",sub:"Step down from HX10 AMT — ₹9.07L",price:"₹9.07L",
+  {name:"HX8 AMT",sub:"Step down from HX10 AMT — ₹9.12L",price:"₹9.12L",
    missing:[
     {cat:"Infotainment",name:"No BlueLink / No OTA Updates",note:"No remote start, no live tracking, no over-the-air updates"},
     {cat:"Safety",name:"No 360° Camera",note:"No bird's eye parking view"},
    ]},
-  {name:"HX6 AMT",sub:"Step down from HX8 — ₹8.32L",price:"₹8.32L",
+  {name:"HX6 AMT",sub:"Step down from HX8 — ₹8.40L",price:"₹8.40L",
    missing:[
     {cat:"Safety",name:"No Dashcam",note:"No drive recorder — no accident evidence"},
     {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed to charge phone"},
    ]},
-  {name:"HX4 Plus AMT",sub:"Step down from HX6 — ₹8.00L",price:"₹8.00L",
+  {name:"HX4 Plus AMT",sub:"Step down from HX6 — ₹8.10L",price:"₹8.10L",
    missing:[
     {cat:"Comfort",name:"No Sunroof",note:"No open-air option — closed cabin feeling"},
     {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC — adjust yourself"},
@@ -275,7 +275,7 @@ variants:[
 
 const G3={icon:"🌿",label:"CNG",title:"CNG — Hy-CNG Duo (Dual Cylinder)",sub:"69PS CNG / 83PS Petrol · 27.10 km/kg ARAI · Dual cylinder preserves more boot space than single cyl kits",
 variants:[
-  {name:"SX Tech Dual CNG",sub:"Top CNG variant — full features",price:"₹8.85L",
+  {name:"SX Tech Dual CNG",sub:"Top CNG variant — full features",price:"₹9.10L",
    features:[
     {cat:"Fuel",name:"Bi-fuel CNG + Petrol",note:"Switch between CNG and petrol — never stuck without fuel"},
     {cat:"Fuel",name:"27.10 km/kg ARAI CNG mileage",note:"At ₹90/kg CNG → ~₹3.32/km running cost vs ₹9+/km petrol"},
@@ -293,7 +293,7 @@ variants:[
    missing:[
     {cat:"Infotainment",name:"No SX Tech features",note:"Slightly fewer tech additions — otherwise same spec as SX Dual with Knight styling"},
    ]},
-  {name:"SX Dual CNG",sub:"Step down from Knight Edition — ₹8.67L",price:"₹8.67L",
+  {name:"SX Dual CNG",sub:"Step down from Knight Edition — ₹8.95L",price:"₹8.95L",
    missing:[
     {cat:"Exterior",name:"No Knight Black Styling Pack",note:"Standard colour only — no Knight exclusive black treatment"},
    ]},
@@ -308,7 +308,7 @@ variants:[
     {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only"},
     {cat:"Exterior",name:"Steel Wheels (not Alloy)",note:"No alloy wheels"},
    ]},
-  {name:"EX Dual CNG",sub:"Base CNG variant — ₹6.95L",price:"₹6.95L",
+  {name:"EX Dual CNG",sub:"Base CNG variant — ₹7.00L",price:"₹7.00L",
    missing:[
     {cat:"Infotainment",name:"No Touchscreen",note:"No screen at all — no CarPlay, no Android Auto"},
     {cat:"Comfort",name:"No Rear AC Vents properly",note:"Basic comfort package only"},
@@ -318,13 +318,13 @@ variants:[
 const GROUPS=[G1,G2,G3];
 const VERDICT_INTRO="Five clear picks across the 2026 Exter range.";
 const VERDICTS=[
-  {label:"Entry SUV",title:"HX2 MT",body:"6 airbags, ESC, rear AC vents, H-shape DRLs. India's safest entry micro SUV — all safety essentials standard.",price:"₹5.64L · Petrol MT",best:false},
-  {label:"Best Value",title:"HX6 MT",body:"Sunroof, auto climate, keyless start, rear camera, cruise, alloy wheels, wireless CarPlay. The Exter sweet spot.",price:"₹7.70L · Petrol MT",best:true},
-  {label:"Auto Pick",title:"HX6 AMT",body:"Everything HX6 MT has — plus AMT automatic. No clutch in city traffic.",price:"₹8.32L · Petrol AMT",best:false},
-  {label:"Maximum Features",title:"HX10 AMT",body:"BlueLink 60+, OTA updates, 360° camera, dashcam, voice commands. The fully connected Exter.",price:"₹9.57L · Petrol AMT",best:false},
-  {label:"Running Cost First",title:"SX Dual CNG",body:"27.10 km/kg. Sunroof, auto climate, keyless, wireless CarPlay. Saves ₹50-70K/year vs petrol for 15,000 km/year drivers.",price:"₹8.67L · CNG MT",best:false},
+  {label:"Entry SUV",title:"HX2 MT",body:"6 airbags, ESC, rear AC vents, H-shape DRLs. India's safest entry micro SUV — all safety essentials standard.",price:"₹5.81L · Petrol MT",best:false},
+  {label:"Best Value",title:"HX6 MT",body:"Sunroof, auto climate, keyless start, rear camera, cruise, alloy wheels, wireless CarPlay. The Exter sweet spot.",price:"₹7.99L · Petrol MT",best:true},
+  {label:"Auto Pick",title:"HX6 AMT",body:"Everything HX6 MT has — plus AMT automatic. No clutch in city traffic.",price:"₹8.40L · Petrol AMT",best:false},
+  {label:"Maximum Features",title:"HX10 AMT",body:"BlueLink 60+, OTA updates, 360° camera, dashcam, voice commands. The fully connected Exter.",price:"₹9.61L · Petrol AMT",best:false},
+  {label:"Running Cost First",title:"SX Dual CNG",body:"27.10 km/kg. Sunroof, auto climate, keyless, wireless CarPlay. Saves ₹50-70K/year vs petrol for 15,000 km/year drivers.",price:"₹8.95L · CNG MT",best:false},
 ];
-const VERDICT_TIP="<strong>Sunroof is a must?</strong> → HX6 MT at ₹7.70L. Auto transmission → HX6 AMT at ₹8.32L. High mileage daily commute → SX Dual CNG at ₹8.67L. No touchscreen needed → HX3 at ₹6.00L — still gets 6 airbags and ESC.";
+const VERDICT_TIP="<strong>Sunroof is a must?</strong> → HX6 MT at ₹7.99L. Auto transmission → HX6 AMT at ₹8.40L. High mileage daily commute → SX Dual CNG at ₹8.95L. No touchscreen needed → HX3 at ₹6.30L — still gets 6 airbags and ESC.";
 
 </script>
 <script>

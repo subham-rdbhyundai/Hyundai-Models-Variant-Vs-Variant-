@@ -145,14 +145,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 
 const MODEL_H1="Hyundai<br><em>Creta</em>";const GHOST="Creta";
 const TAGLINE="India's #1 SUV · 10 Consecutive Years · 1.2 Million Owners · 3 Engines · Best Resale Value · Level 2 ADAS";
-const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const LAST_UPDATED="June 2026";const CITY="Kolkata";
 const SPEC_NOTE="Three engines: 1.5L NA 115PS · 1.5L Diesel 116PS · 1.5L Turbo 160PS. 7 trims: E / EX / EX(O) / S(O) / SX / SX Premium / King. Knight Edition available. Best resale value in class. 3 yrs unlimited km warranty.";
-const SPECS=[{val:"₹10.79L",lbl:"Starts From",note:"E 1.5L NA MT"},{val:"160PS",lbl:"Turbo King",note:"1.5T GDi · King variant"},{val:"#1",lbl:"India Sales",note:"10 consecutive years"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
-const BADGES=[{text:"From ₹10.79L",gold:true},{text:"India's #1 SUV — 10 Years"},{text:"Best Resale Value in Class"},{text:"Level 2 ADAS — SX onwards"},{text:"Knight Edition Available"},{text:"Kolkata ex-showroom · May 2026"}];
+const SPECS=[{val:"₹10.91L",lbl:"Starts From",note:"E 1.5L NA MT"},{val:"160PS",lbl:"Turbo King",note:"1.5T GDi · King variant"},{val:"#1",lbl:"India Sales",note:"10 consecutive years"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
+const BADGES=[{text:"From ₹10.91L",gold:true},{text:"India's #1 SUV — 10 Years"},{text:"Best Resale Value in Class"},{text:"Level 2 ADAS — SX onwards"},{text:"Knight Edition Available"},{text:"Kolkata ex-showroom · June 2026"}];
 
 const G1={icon:"👑",label:"Turbo/King",title:"1.5L Turbo — King Edition (160PS DCT)",sub:"160PS / 253Nm · 7-speed DCT · India's most powerful midsize SUV · Top of Creta range",
 variants:[
-  {name:"King Knight DCT",sub:"Absolute top Creta · 160PS + Knight black styling",price:"₹20.05L",
+  {name:"King Knight DCT",sub:"Absolute top Creta · 160PS + Knight black styling",price:"₹20.11L",
    features:[
     {cat:"Engine",name:"1.5L T-GDi 160PS / 253Nm",note:"Most powerful midsize SUV engine in India · 7-speed DCT"},
     {cat:"Engine",name:"Paddle Shifters",note:"Manual gear override from steering wheel"},
@@ -181,7 +181,7 @@ variants:[
     {cat:"Ownership",name:"Best Resale Value in Class",note:"10 years of proven data — Creta holds value better than any rival"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"King DCT",sub:"Step down from Knight — ₹19.06L",price:"₹19.06L",
+  {name:"King DCT",sub:"Step down from Knight — ₹19.91L",price:"₹19.91L",
    missing:[
     {cat:"Exterior",name:"No Knight Black Pack",note:"Standard colours only — no blacked-out exterior styling"},
     {cat:"Exterior",name:"Standard Silver 18-inch Alloys",note:"Same alloy size but silver — not the exclusive Knight black finish"},
@@ -190,7 +190,7 @@ variants:[
 
 const G2={icon:"⛽",label:"NA Petrol",title:"1.5L NA Petrol — MT & IVT (CVT)",sub:"115PS / 144Nm · MT 17.4 kmpl · IVT 19.1 kmpl · Most popular Creta engine",
 variants:[
-  {name:"SX Premium IVT",sub:"Top NA petrol variant · Full features",price:"₹16.58L",
+  {name:"SX Premium IVT",sub:"Top NA petrol variant · Full features",price:"₹17.79L",
    features:[
     {cat:"Engine",name:"1.5L MPI 115PS / 144Nm",note:"IVT (CVT) smooth automatic · 19.1 kmpl ARAI"},
     {cat:"Safety",name:"Level 2 ADAS + 6 Airbags",note:"16 ADAS functions + 6 airbags"},
@@ -205,7 +205,7 @@ variants:[
     {cat:"Exterior",name:"18-inch Alloy Wheels",note:"Largest alloys in NA range"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"SX Premium MT",sub:"Manual version — ₹15.68L",price:"₹15.68L",
+  {name:"SX Premium MT",sub:"Manual version — ₹16.34L",price:"₹16.34L",
    missing:[
     {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — must operate clutch in city traffic"},
    ]},
@@ -218,34 +218,34 @@ variants:[
     {cat:"Infotainment",name:"No BlueLink Connected Car",note:"No remote start, no live tracking, no OTA updates"},
     {cat:"Comfort",name:"No Drive Modes",note:"No Sport/Eco/Normal selection — single character"},
    ]},
-  {name:"SX MT",sub:"Manual — ₹14.46L",price:"₹14.46L",
+  {name:"SX MT",sub:"Manual — ₹15.04L",price:"₹15.04L",
    missing:[
     {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — clutch in every drive"},
    ]},
-  {name:"S(O) IVT",sub:"Step down from SX — ₹14.58L",price:"₹14.58L",
+  {name:"S(O) IVT",sub:"Step down from SX — ₹15.66L",price:"₹15.66L",
    missing:[
     {cat:"Safety",name:"No Level 2 ADAS",note:"No forward collision warning · no lane assist · no blind spot monitoring"},
     {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed every time to charge phone"},
     {cat:"Exterior",name:"17-inch Alloys (not 18-inch)",note:"Slightly smaller alloys — still alloy, not steel"},
    ]},
-  {name:"S(O) MT",sub:"Manual — ₹13.68L",price:"₹13.68L",
+  {name:"S(O) MT",sub:"Manual — ₹14.21L",price:"₹14.21L",
    missing:[
     {cat:"Engine",name:"Manual Gearbox (not IVT)",note:"6-speed manual — clutch required"},
    ]},
-  {name:"EX(O) IVT",sub:"Step down from S(O) — ₹13.28L",price:"₹13.28L",
+  {name:"EX(O) IVT",sub:"Step down from S(O) — ₹14.50L",price:"₹14.50L",
    missing:[
     {cat:"Comfort",name:"No Voice-Controlled Panoramic Sunroof",note:"No sunroof at all — closed roof — give up the open-sky feature"},
     {cat:"Infotainment",name:"8-inch Screen (not Dual 10.25-inch)",note:"Single smaller screen · wired CarPlay — not wireless"},
     {cat:"Infotainment",name:"No BlueLink Connected Car",note:"No remote start, no tracking, no OTA updates"},
     {cat:"Exterior",name:"16-inch Alloys (not 17-inch)",note:"Smaller alloys — less commanding road presence"},
    ]},
-  {name:"EX MT",sub:"Step down — ₹11.72L",price:"₹11.72L",
+  {name:"EX MT",sub:"Step down — ₹12.07L",price:"₹12.07L",
    missing:[
     {cat:"Safety",name:"No Rear Parking Camera",note:"Sensors only — no camera image when reversing"},
     {cat:"Comfort",name:"No Keyless Entry + Push Start",note:"Key insertion required — not keyless"},
     {cat:"Comfort",name:"No Cruise Control",note:"No highway speed hold"},
    ]},
-  {name:"E MT",sub:"Base Creta — ₹10.79L",price:"₹10.79L",
+  {name:"E MT",sub:"Base Creta — ₹10.91L",price:"₹10.91L",
    missing:[
     {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only — adjust fan speed and temperature yourself"},
     {cat:"Exterior",name:"Steel Wheels (not Alloy)",note:"Heavy steel wheels — no premium alloy look"},
@@ -254,7 +254,7 @@ variants:[
 
 const G3={icon:"🛢️",label:"Diesel",title:"1.5L Diesel — MT & AT",sub:"116PS / 250Nm · MT 21.4 kmpl · AT 18.5 kmpl · Best mileage · Best highway engine",
 variants:[
-  {name:"King Knight Diesel AT",sub:"Top diesel Creta · Full features",price:"₹20.05L",
+  {name:"King Knight Diesel AT",sub:"Top diesel Creta · Full features",price:"₹20.11L",
    features:[
     {cat:"Engine",name:"1.5L U2 CRDi 116PS / 250Nm",note:"Diesel torque — effortless overtaking · 6-speed TC automatic · 18.5 kmpl"},
     {cat:"Engine",name:"Best Mileage in Range",note:"Manual diesel: 21.4 kmpl ARAI — best efficiency across all Creta variants"},
@@ -265,7 +265,7 @@ variants:[
     {cat:"Infotainment",name:"Dual 10.25-inch + Bose + BlueLink",note:"Twin screens + premium audio + connected car"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"SX(O) Diesel AT",sub:"Step down — ₹18.76L",price:"₹18.76L",
+  {name:"SX(O) Diesel AT",sub:"Step down — ₹19.78L",price:"₹19.78L",
    missing:[
     {cat:"Exterior",name:"No Knight Black Styling Pack",note:"Standard colours — no exclusive black treatment"},
    ]},
@@ -274,12 +274,12 @@ variants:[
     {cat:"Engine",name:"Manual Gearbox (not AT)",note:"6-speed manual — must operate clutch in all conditions"},
     {cat:"Comfort",name:"No Ventilated Seats",note:"No seat cooling — standard seats only"},
    ]},
-  {name:"S(O) Diesel MT",sub:"Step down from SX Tech — ₹15.29L",price:"₹15.29L",
+  {name:"S(O) Diesel MT",sub:"Step down from SX Tech — ₹15.85L",price:"₹15.85L",
    missing:[
     {cat:"Safety",name:"No Level 2 ADAS",note:"No forward collision, no lane assist, no blind spot monitoring"},
     {cat:"Infotainment",name:"No Bose Audio",note:"Standard speakers — less premium sound"},
    ]},
-  {name:"E Diesel MT",sub:"Base diesel Creta — ₹12.40L",price:"₹12.40L",
+  {name:"E Diesel MT",sub:"Base diesel Creta — ₹12.53L",price:"₹12.53L",
    missing:[
     {cat:"Comfort",name:"No Sunroof",note:"No open-sky option — closed roof"},
     {cat:"Comfort",name:"No Keyless + Push Start",note:"Key insertion required"},
@@ -291,14 +291,14 @@ variants:[
 const GROUPS=[G1,G2,G3];
 const VERDICT_INTRO="Six picks across India's #1 SUV.";
 const VERDICTS=[
-  {label:"Entry Creta",title:"E MT",body:"6 airbags, ESC, rear AC vents, auto climate. Creta's proven reliability and best resale value from ₹10.79L.",price:"₹10.79L · 1.5 NA MT",best:false},
-  {label:"Best Value",title:"S(O) IVT",body:"Panoramic sunroof, dual 10.25-inch screens, wireless charger, BlueLink, wireless CarPlay, 17-inch alloys — IVT smooth auto.",price:"₹14.58L · 1.5 NA IVT",best:true},
-  {label:"Best Mileage",title:"E Diesel MT",body:"21.4 kmpl ARAI diesel. For 1,500+ km/month highway drivers — fuel savings easily justify the price over petrol.",price:"₹12.40L · Diesel MT",best:false},
-  {label:"Full ADAS + Features",title:"SX Premium IVT",body:"Level 2 ADAS, 360° camera, Bose, ventilated seats, dashcam, BlueLink. The Creta with no compromises.",price:"₹16.58L · 1.5 NA IVT",best:false},
-  {label:"Most Powerful",title:"King DCT",body:"160PS turbo + DCT, memory seat, Bose, all features. India's most powerful midsize SUV.",price:"₹19.06L · 1.5T DCT",best:false},
-  {label:"Ultimate Creta",title:"King Knight DCT",body:"All King features + full Knight black styling. The boldest Creta ever made.",price:"₹20.05L · 1.5T DCT",best:false},
+  {label:"Entry Creta",title:"E MT",body:"6 airbags, ESC, rear AC vents, auto climate. Creta's proven reliability and best resale value from ₹10.91L.",price:"₹10.91L · 1.5 NA MT",best:false},
+  {label:"Best Value",title:"S(O) IVT",body:"Panoramic sunroof, dual 10.25-inch screens, wireless charger, BlueLink, wireless CarPlay, 17-inch alloys — IVT smooth auto.",price:"₹15.66L · 1.5 NA IVT",best:true},
+  {label:"Best Mileage",title:"E Diesel MT",body:"21.4 kmpl ARAI diesel. For 1,500+ km/month highway drivers — fuel savings easily justify the price over petrol.",price:"₹12.53L · Diesel MT",best:false},
+  {label:"Full ADAS + Features",title:"SX Premium IVT",body:"Level 2 ADAS, 360° camera, Bose, ventilated seats, dashcam, BlueLink. The Creta with no compromises.",price:"₹17.79L · 1.5 NA IVT",best:false},
+  {label:"Most Powerful",title:"King DCT",body:"160PS turbo + DCT, memory seat, Bose, all features. India's most powerful midsize SUV.",price:"₹19.91L · 1.5T DCT",best:false},
+  {label:"Ultimate Creta",title:"King Knight DCT",body:"All King features + full Knight black styling. The boldest Creta ever made.",price:"₹20.11L · 1.5T DCT",best:false},
 ];
-const VERDICT_TIP="<strong>S(O) IVT at ₹14.58L</strong> — sunroof, dual screens, wireless charger, BlueLink, smooth CVT. Best balance of features and value. Mileage priority → E Diesel MT at ₹12.40L. Full features → SX Premium IVT at ₹16.58L.";
+const VERDICT_TIP="<strong>S(O) IVT at ₹15.66L</strong> — sunroof, dual screens, wireless charger, BlueLink, smooth CVT. Best balance of features and value. Mileage priority → E Diesel MT at ₹12.53L. Full features → SX Premium IVT at ₹17.79L.";
 
 </script>
 <script>

@@ -146,12 +146,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 const MODEL_H1 = "Hyundai<br><em>Grand i10 Nios</em>";
 const GHOST = "i10";
 const TAGLINE = "Entry Hatchback · 20 Variants · Petrol · CNG · Manual · AMT · 6 Airbags Standard";
-const LAST_UPDATED = "May 2026";
+const LAST_UPDATED="June 2026";
 const CITY = "Kolkata";
 const SPEC_NOTE = "Same 1.2L Kappa 4-cylinder engine across all variants. 83PS / 114Nm (petrol) · 69PS / 95Nm (CNG). Body: 3815mm × 1680mm × 1520mm. Boot: 260L. 3 years unlimited km warranty.";
 
 const SPECS = [
-  {val:"₹5.55L",lbl:"Starts From",note:"Era Petrol MT"},
+  {val:"₹5.60L",lbl:"Starts From",note:"Era Petrol MT"},
   {val:"83PS",lbl:"Petrol Power",note:"1.2L Kappa · 114Nm"},
   {val:"27.3",lbl:"km/kg CNG",note:"ARAI · Dual cylinder"},
   {val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}
@@ -162,7 +162,7 @@ const BADGES = [
   {text:"6 Airbags — All Variants"},
   {text:"Petrol · CNG · Manual · AMT"},
   {text:"VIBE Edition Available"},
-  {text:"Kolkata ex-showroom · May 2026"}
+  {text:"Kolkata ex-showroom · June 2026"}
 ];
 
 // ─── GROUP 1: PETROL MANUAL ───────────────────────────────────
@@ -175,7 +175,7 @@ const G1 = {
     {
       name:"Asta MT",
       sub:"Top petrol manual · Everything included",
-      price:"₹7.51L",
+      price:"₹7.52L",
       features:[
         {cat:"Price & Engine",name:"Engine",note:"1.2L Kappa 4-cyl · 83PS / 114Nm · 20.70 kmpl ARAI"},
         {cat:"Price & Engine",name:"Gearbox",note:"5-speed Manual"},
@@ -222,8 +222,8 @@ const G1 = {
     },
     {
       name:"Sportz (O) MT",
-      sub:"Step down from Asta — ₹7.09L",
-      price:"₹7.09L",
+      sub:"Step down from Asta — ₹7.11L",
+      price:"₹7.11L",
       missing:[
         {cat:"Comfort",name:"No Push Button Start",note:"You'll need to insert the key to start — not keyless ignition"},
         {cat:"Comfort",name:"No Cruise Control",note:"You must keep your foot on accelerator on highways — more tiring"},
@@ -234,8 +234,8 @@ const G1 = {
     },
     {
       name:"Sportz MT",
-      sub:"Step down from Sportz (O) — ₹6.84L",
-      price:"₹6.84L",
+      sub:"Step down from Sportz (O) — ₹6.88L",
+      price:"₹6.88L",
       missing:[
         {cat:"Safety",name:"No ESC + Hill-Start Assist",note:"No electronic safety net on curves — car can skid if you overcorrect"},
         {cat:"Safety",name:"No Rear View Camera",note:"Reversing is by mirrors and sensors only — no camera image"},
@@ -245,8 +245,8 @@ const G1 = {
     },
     {
       name:"Corporate MT",
-      sub:"Step down from Sportz — ₹6.51L",
-      price:"₹6.51L",
+      sub:"Step down from Sportz — ₹6.56L",
+      price:"₹6.56L",
       missing:[
         {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only — you must adjust fan speed and temperature yourself"},
         {cat:"Comfort",name:"No Cooled Glovebox",note:"No cool storage — your water bottle or snacks stay at cabin temperature"},
@@ -261,8 +261,8 @@ const G1 = {
     },
     {
       name:"Magna MT",
-      sub:"Step down from Corporate — ₹6.28L",
-      price:"₹6.28L",
+      sub:"Step down from Corporate — ₹6.33L",
+      price:"₹6.33L",
       missing:[
         {cat:"Infotainment",name:"No Touchscreen at All",note:"No screen — no navigation, no CarPlay, no Android Auto"},
         {cat:"Infotainment",name:"No Bluetooth / Voice Commands",note:"No wireless audio — you'll need to use phone separately"},
@@ -273,8 +273,8 @@ const G1 = {
     },
     {
       name:"Era MT",
-      sub:"Base variant — ₹5.55L",
-      price:"₹5.55L",
+      sub:"Base variant — ₹5.60L",
+      price:"₹5.60L",
       missing:[
         {cat:"Comfort",name:"Front Power Windows Only (not all 4)",note:"Rear passengers cannot operate their own windows electrically"},
         {cat:"Comfort",name:"No Rear AC Vents",note:"Backseat passengers get no direct airflow — they rely on front vents"},
@@ -297,7 +297,7 @@ const G2 = {
     {
       name:"Asta AMT",
       sub:"Top auto variant · Every feature plus AMT convenience",
-      price:"₹8.03L",
+      price:"₹8.04L",
       features:[
         {cat:"Price & Engine",name:"Engine",note:"1.2L Kappa 4-cyl · 83PS · AMT automatic · 20.10 kmpl"},
         {cat:"Price & Engine",name:"AMT Gearbox",note:"No clutch pedal — gear changes happen automatically in traffic"},
@@ -322,8 +322,8 @@ const G2 = {
     },
     {
       name:"Sportz (O) AMT",
-      sub:"Step down from Asta AMT — ₹7.63L",
-      price:"₹7.63L",
+      sub:"Step down from Asta AMT — ₹7.67L",
+      price:"₹7.67L",
       missing:[
         {cat:"Comfort",name:"No Push Button Start",note:"Must insert key — no button start"},
         {cat:"Comfort",name:"No Cruise Control",note:"Must keep foot on accelerator on highways"},
@@ -334,16 +334,16 @@ const G2 = {
     },
     {
       name:"Sportz AMT",
-      sub:"Step down from Sportz (O) AMT — ₹7.36L",
-      price:"₹7.36L",
+      sub:"Step down from Sportz (O) AMT — ₹7.40L",
+      price:"₹7.40L",
       missing:[
         {cat:"Exterior",name:"14-inch Alloy (not 15-inch Diamond-cut)",note:"Smaller gunmetal alloys — not the premium diamond-cut finish"},
       ]
     },
     {
       name:"Corporate AMT",
-      sub:"Step down from Sportz AMT — ₹7.12L",
-      price:"₹7.12L",
+      sub:"Step down from Sportz AMT — ₹7.17L",
+      price:"₹7.17L",
       missing:[
         {cat:"Safety",name:"No ESC + Hill-Start Assist",note:"No electronic stability help — car can skid on sharp corners"},
         {cat:"Safety",name:"No Rear View Camera",note:"Reversing by sensors only — no camera image on screen"},
@@ -374,7 +374,7 @@ const G3 = {
     {
       name:"Sportz CNG",
       sub:"Top CNG variant · Best of both fuel worlds",
-      price:"₹7.72L",
+      price:"₹7.77L",
       features:[
         {cat:"Price & Engine",name:"Fuel",note:"CNG + Petrol bi-fuel — switch between both anytime"},
         {cat:"Price & Engine",name:"CNG ARAI Mileage",note:"27.30 km/kg · Factory-fitted Hy-CNG Duo dual cylinder"},
@@ -403,8 +403,8 @@ const G3 = {
     },
     {
       name:"Magna CNG",
-      sub:"Step down from Sportz CNG — ₹7.22L",
-      price:"₹7.22L",
+      sub:"Step down from Sportz CNG — ₹7.27L",
+      price:"₹7.27L",
       missing:[
         {cat:"Safety",name:"No Rear View Camera",note:"No camera image when reversing — sensors only"},
         {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only — must adjust temperature yourself"},
@@ -428,7 +428,7 @@ const G4 = {
     {
       name:"Asta VIBE AMT (Top VIBE)",
       sub:"Everything Asta AMT has · Plus VIBE exclusive additions",
-      price:"₹8.03L",
+      price:"₹8.04L",
       features:[
         {cat:"All Asta AMT Features",name:"Complete Asta AMT feature set",note:"Everything listed in the Petrol AMT group above — fully included"},
         {cat:"VIBE Exclusives",name:"Built-in Dashcam",note:"Records front and interior footage simultaneously — first in this segment"},
@@ -438,8 +438,8 @@ const G4 = {
     },
     {
       name:"Sportz (O) VIBE AMT",
-      sub:"Step down from Asta VIBE AMT — ₹7.73L",
-      price:"₹7.73L",
+      sub:"Step down from Asta VIBE AMT — ₹7.75L",
+      price:"₹7.75L",
       missing:[
         {cat:"Comfort",name:"No Push Button Start",note:"Must insert key — no one-touch start"},
         {cat:"Comfort",name:"No Cruise Control",note:"No highway speed hold — foot must stay on accelerator"},
@@ -449,16 +449,16 @@ const G4 = {
     },
     {
       name:"Sportz VIBE AMT",
-      sub:"Step down from Sportz (O) VIBE AMT — ₹7.61L",
-      price:"₹7.61L",
+      sub:"Step down from Sportz (O) VIBE AMT — ₹7.67L",
+      price:"₹7.67L",
       missing:[
         {cat:"Exterior",name:"14-inch Alloys (not 15-inch Diamond-cut)",note:"Smaller gunmetal alloys — not diamond-cut finish of (O) variants"},
       ]
     },
     {
       name:"Sportz (O) VIBE MT",
-      sub:"Manual equivalent · Same features, 5-speed MT — ₹7.09L",
-      price:"₹7.09L",
+      sub:"Manual equivalent · Same features, 5-speed MT — ₹7.11L",
+      price:"₹7.11L",
       missing:[
         {cat:"Engine",name:"Manual Gearbox (not AMT auto)",note:"5-speed manual — must operate clutch yourself in traffic"},
         {cat:"Exterior",name:"No Electric Folding ORVMs",note:"AMT variants get auto-folding mirrors — MT does not"},
@@ -466,8 +466,8 @@ const G4 = {
     },
     {
       name:"Sportz VIBE MT",
-      sub:"Step down from Sportz (O) VIBE MT — ₹7.09L",
-      price:"₹7.09L",
+      sub:"Step down from Sportz (O) VIBE MT — ₹7.11L",
+      price:"₹7.11L",
       missing:[
         {cat:"Exterior",name:"14-inch Alloys (not 15-inch)",note:"Same step-down as regular Sportz variants"},
       ]
@@ -479,15 +479,15 @@ const GROUPS = [G1, G2, G3, G4];
 
 const VERDICT_INTRO = "Pick your priority — we'll point you to the right variant.";
 const VERDICTS = [
-  {label:"Tightest Budget",title:"Era MT",body:"All 6 airbags, keyless entry, rear AC vents, front power windows. Everything essential at the lowest possible price.",price:"₹5.55L · Petrol MT",best:false},
-  {label:"City Commuter",title:"Sportz MT",body:"8-inch wireless CarPlay screen, rear camera, auto climate, alloy wheels, ESC. The most popular Nios for daily city driving.",price:"₹6.84L · Petrol MT",best:false},
-  {label:"Best Value Overall",title:"Sportz (O) MT",body:"All Sportz features plus ESC, rear camera, 15-inch diamond-cut alloys. The sweet spot in the entire Nios range.",price:"₹7.09L · Petrol MT",best:true},
-  {label:"Auto for City Traffic",title:"Sportz (O) AMT",body:"Everything from Sportz (O) MT plus AMT automatic. No clutch in Kolkata traffic — genuinely transforms daily driving.",price:"₹7.63L · Petrol AMT",best:false},
-  {label:"Fuel Economy First",title:"Sportz CNG",body:"27.30 km/kg. Factory dual cylinder. 8-inch screen, auto climate, rear camera. Running cost ~₹3.30/km vs ₹8-9/km petrol.",price:"₹7.72L · CNG MT",best:false},
-  {label:"All Features",title:"Asta AMT",body:"Every feature in the Nios: wireless charger, push-start, cruise control, leather steering, auto headlamps. Nothing held back.",price:"₹8.03L · Petrol AMT",best:false},
+  {label:"Tightest Budget",title:"Era MT",body:"All 6 airbags, keyless entry, rear AC vents, front power windows. Everything essential at the lowest possible price.",price:"₹5.60L · Petrol MT",best:false},
+  {label:"City Commuter",title:"Sportz MT",body:"8-inch wireless CarPlay screen, rear camera, auto climate, alloy wheels, ESC. The most popular Nios for daily city driving.",price:"₹6.88L · Petrol MT",best:false},
+  {label:"Best Value Overall",title:"Sportz (O) MT",body:"All Sportz features plus ESC, rear camera, 15-inch diamond-cut alloys. The sweet spot in the entire Nios range.",price:"₹7.11L · Petrol MT",best:true},
+  {label:"Auto for City Traffic",title:"Sportz (O) AMT",body:"Everything from Sportz (O) MT plus AMT automatic. No clutch in Kolkata traffic — genuinely transforms daily driving.",price:"₹7.67L · Petrol AMT",best:false},
+  {label:"Fuel Economy First",title:"Sportz CNG",body:"27.30 km/kg. Factory dual cylinder. 8-inch screen, auto climate, rear camera. Running cost ~₹3.30/km vs ₹8-9/km petrol.",price:"₹7.77L · CNG MT",best:false},
+  {label:"All Features",title:"Asta AMT",body:"Every feature in the Nios: wireless charger, push-start, cruise control, leather steering, auto headlamps. Nothing held back.",price:"₹8.04L · Petrol AMT",best:false},
 ];
 
-const VERDICT_TIP = "<strong>Quick rule:</strong> Under ₹6.5L → Era or Magna. ₹6.5–7.5L → Sportz (O) MT is the clear sweet spot. Want auto → Sportz (O) AMT at ₹7.63L. High mileage daily driver → Sportz CNG at ₹7.72L pays back within 18 months. All features no compromise → Asta AMT at ₹8.03L.";
+const VERDICT_TIP = "<strong>Quick rule:</strong> Under ₹6.5L → Era or Magna. ₹6.5–7.5L → Sportz (O) MT is the clear sweet spot. Want auto → Sportz (O) AMT at ₹7.67L. High mileage daily driver → Sportz CNG at ₹7.77L pays back within 18 months. All features no compromise → Asta AMT at ₹8.04L.";
 
 </script>
 <script>

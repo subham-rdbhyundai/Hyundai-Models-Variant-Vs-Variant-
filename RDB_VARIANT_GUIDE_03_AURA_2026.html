@@ -145,14 +145,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 
 const MODEL_H1="Hyundai<br><em>Aura</em>";const GHOST="Aura";
 const TAGLINE="Compact Sedan · Only Turbo Petrol in Segment · 100PS · Factory CNG · Manual & AMT · 408L Boot";
-const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const LAST_UPDATED="June 2026";const CITY="Kolkata";
 const SPEC_NOTE="1.2L NA 83PS (MT/AMT) + 1.0L Turbo 100PS (MT). CNG: 25.91 km/kg ARAI factory-fitted. Body 3995mm. Boot 408L. 3 years unlimited km warranty.";
 const SPECS=[{val:"₹6.00L",lbl:"Starts From",note:"E Petrol MT"},{val:"100PS",lbl:"Turbo Option",note:"1.0L T-GDi · Only in class"},{val:"408L",lbl:"Boot Space",note:"Best in segment"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
-const BADGES=[{text:"From ₹6.00L",gold:true},{text:"Only Turbo Sedan in Class"},{text:"6 Airbags Standard"},{text:"Factory CNG Available"},{text:"Kolkata ex-showroom · May 2026"}];
+const BADGES=[{text:"From ₹6.00L",gold:true},{text:"Only Turbo Sedan in Class"},{text:"6 Airbags Standard"},{text:"Factory CNG Available"},{text:"Kolkata ex-showroom · June 2026"}];
 
 const G1={icon:"⛽",label:"Petrol MT",title:"Petrol — Manual Gearbox (1.2L NA + 1.0T Turbo)",sub:"1.2L 83PS: 20.10 kmpl ARAI · 1.0L Turbo 100PS: 18.40 kmpl ARAI · SX(O) gets turbo option",
 variants:[
-  {name:"SX(O) MT",sub:"Top petrol manual · Optional 1.0L Turbo 100PS engine",price:"₹8.29L",
+  {name:"SX(O) MT",sub:"Top petrol manual · Optional 1.0L Turbo 100PS engine",price:"₹8.16L",
    features:[
     {cat:"Engine",name:"1.2L NA 83PS OR 1.0L Turbo 100PS",note:"SX(O) only variant offering India's only turbo compact sedan engine — 100PS vs rivals' max 89PS"},
     {cat:"Engine",name:"ARAI Mileage",note:"20.10 kmpl (NA) · 18.40 kmpl (Turbo)"},
@@ -185,7 +185,7 @@ variants:[
     {cat:"Interior",name:"Leather-Wrapped Steering",note:"Premium soft-touch grip"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"SX MT",sub:"Step down from SX(O) — ₹7.74L",price:"₹7.74L",
+  {name:"SX MT",sub:"Step down from SX(O) — ₹7.70L",price:"₹7.70L",
    missing:[
     {cat:"Engine",name:"No 1.0L Turbo Option",note:"1.2L NA only — you lose India's only turbo compact sedan · 100PS becomes 83PS"},
     {cat:"Comfort",name:"No Push Button Start",note:"Must insert key every time — not keyless ignition"},
@@ -201,7 +201,7 @@ variants:[
     {cat:"Infotainment",name:"Smaller 7-inch Screen (not 8-inch)",note:"Smaller screen · wired CarPlay only — not wireless"},
     {cat:"Exterior",name:"14-inch Alloy (not 15-inch)",note:"Smaller alloy wheels — less prominent and premium"},
    ]},
-  {name:"S MT",sub:"Step down from Corporate — ₹7.24L",price:"₹7.24L",
+  {name:"S MT",sub:"Step down from Corporate — ₹6.91L",price:"₹6.91L",
    missing:[
     {cat:"Infotainment",name:"No Touchscreen",note:"No screen at all — no navigation, no CarPlay, no Android Auto"},
     {cat:"Infotainment",name:"No Steering Audio Controls",note:"No music/call controls on steering wheel"},
@@ -222,7 +222,7 @@ variants:[
 
 const G2={icon:"🤖",label:"Petrol AMT",title:"Petrol — Automatic (AMT)",sub:"1.2L 83PS · 19.20 kmpl ARAI · No clutch · S AMT + SX+ AMT only",
 variants:[
-  {name:"SX+ AMT",sub:"Top auto variant · Premium features",price:"₹8.75L",
+  {name:"SX+ AMT",sub:"Top auto variant · Premium features",price:"₹8.35L",
    features:[
     {cat:"All SX MT Features",name:"Complete SX MT feature set",note:"Auto climate, rear camera, ESC, 8-inch wireless screen, alloys, cruise — all included"},
     {cat:"AMT",name:"5-speed AMT Gearbox",note:"No clutch pedal — automatic gear changes in city traffic"},
@@ -246,7 +246,7 @@ variants:[
 
 const G3={icon:"🌿",label:"CNG",title:"CNG — Factory Hy-CNG",sub:"1.2L · 25.91 km/kg ARAI · E, S, Corporate, SX trims — all manual only",
 variants:[
-  {name:"SX CNG",sub:"Top CNG variant · All comfort features",price:"₹8.54L",
+  {name:"SX CNG",sub:"Top CNG variant · All comfort features",price:"₹8.60L",
    features:[
     {cat:"Fuel",name:"Bi-fuel CNG + Petrol",note:"Factory-fitted Hy-CNG — switch between both fuels anytime"},
     {cat:"Fuel",name:"25.91 km/kg ARAI CNG",note:"At ₹90/kg CNG → ~₹3.47/km vs ₹9+/km on petrol"},
@@ -259,14 +259,14 @@ variants:[
     {cat:"Infotainment",name:"8-inch Wireless CarPlay Screen",note:"Full screen with wireless phone mirroring"},
     {cat:"Ownership",name:"Annual Saving vs Petrol",note:"₹50,000–70,000 saved per year for 15,000 km drivers"},
    ]},
-  {name:"Corporate CNG",sub:"Step down from SX CNG — ₹8.47L",price:"₹8.47L",
+  {name:"Corporate CNG",sub:"Step down from SX CNG — ₹7.91L",price:"₹7.91L",
    missing:[
     {cat:"Safety",name:"No ESC + Hill-Start Assist",note:"No electronic stability — risky on sharp wet corners"},
     {cat:"Safety",name:"No Rear View Camera",note:"No camera image when reversing"},
     {cat:"Comfort",name:"No Cruise Control",note:"Must press accelerator constantly on highways"},
     {cat:"Infotainment",name:"Smaller 7-inch Screen (not 8-inch)",note:"Smaller · wired CarPlay only"},
    ]},
-  {name:"S CNG",sub:"Step down from Corporate CNG — ₹8.27L",price:"₹8.27L",
+  {name:"S CNG",sub:"Step down from Corporate CNG — ₹7.82L",price:"₹7.82L",
    missing:[
     {cat:"Infotainment",name:"No Touchscreen",note:"No screen at all — no navigation, no CarPlay"},
     {cat:"Exterior",name:"No Projector Headlamps",note:"Halogen only — dimmer in night driving"},
@@ -284,12 +284,12 @@ const GROUPS=[G1,G2,G3];
 const VERDICT_INTRO="Five clear picks across the Aura range.";
 const VERDICTS=[
   {label:"Budget Sedan",title:"E MT",body:"6 airbags, rear AC vents, LED tail lamps. The most affordable compact sedan with essential features.",price:"₹6.00L · Petrol MT",best:false},
-  {label:"Best Value",title:"SX MT",body:"Auto climate, rear camera, ESC, 8-inch wireless CarPlay, 15-inch alloys, cruise control, keyless. Everything for daily use.",price:"₹7.74L · Petrol MT",best:true},
-  {label:"Performance Pick",title:"SX(O) MT",body:"Same as SX — plus India's only turbo compact sedan at 100PS. More responsive, more highway capable.",price:"₹8.29L · Petrol MT",best:false},
+  {label:"Best Value",title:"SX MT",body:"Auto climate, rear camera, ESC, 8-inch wireless CarPlay, 15-inch alloys, cruise control, keyless. Everything for daily use.",price:"₹7.70L · Petrol MT",best:true},
+  {label:"Performance Pick",title:"SX(O) MT",body:"Same as SX — plus India's only turbo compact sedan at 100PS. More responsive, more highway capable.",price:"₹8.16L · Petrol MT",best:false},
   {label:"Auto Commuter",title:"S AMT",body:"Entry auto Aura — no clutch for city traffic. Affordable automatic sedan.",price:"₹7.76L · Petrol AMT",best:false},
-  {label:"Low Running Cost",title:"SX CNG",body:"25.91 km/kg, auto climate, 8-inch wireless screen, ESC, cruise. Saves ₹50–70K/year vs petrol at 15,000 km.",price:"₹8.54L · CNG MT",best:false},
+  {label:"Low Running Cost",title:"SX CNG",body:"25.91 km/kg, auto climate, 8-inch wireless screen, ESC, cruise. Saves ₹50–70K/year vs petrol at 15,000 km.",price:"₹8.60L · CNG MT",best:false},
 ];
-const VERDICT_TIP="<strong>SX MT at ₹7.74L</strong> is the sweet spot for most buyers — all comfort and safety features at the right price. High mileage or cost-conscious → SX CNG at ₹8.54L. Want more power → SX(O) with turbo at ₹8.29L — only turbo compact sedan in India.";
+const VERDICT_TIP="<strong>SX MT at ₹7.70L</strong> is the sweet spot for most buyers — all comfort and safety features at the right price. High mileage or cost-conscious → SX CNG at ₹8.60L. Want more power → SX(O) with turbo at ₹8.16L — only turbo compact sedan in India.";
 
 </script>
 <script>

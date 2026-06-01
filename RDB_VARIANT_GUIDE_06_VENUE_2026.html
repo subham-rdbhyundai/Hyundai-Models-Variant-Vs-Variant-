@@ -145,14 +145,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 
 const MODEL_H1="Hyundai<br><em>Venue</em>";const GHOST="Venue";
 const TAGLINE="All-New 2025 · 5-Star Bharat NCAP · Level 2 ADAS · 3 Engines · HX2–HX10 · India's Safest Compact SUV";
-const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const LAST_UPDATED="June 2026";const CITY="Kolkata";
 const SPEC_NOTE="Three engines: 1.2L NA 83PS MT · 1.0L Turbo 120PS MT/DCT · 1.5L Diesel 116PS MT/AT. Level 2 ADAS on HX5 and above. 5-Star Bharat NCAP. BlueLink 60+ on HX6T+. 3 yrs unlimited km warranty.";
 const SPECS=[{val:"₹8.00L",lbl:"Starts From",note:"HX2 1.2 Petrol MT"},{val:"★★★★★",lbl:"Bharat NCAP",note:"5-Star Certified"},{val:"Level 2",lbl:"ADAS",note:"16 functions · HX5 onwards"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
-const BADGES=[{text:"From ₹8.00L",gold:true},{text:"5-Star Bharat NCAP"},{text:"Level 2 ADAS from HX5"},{text:"3 Engines · Petrol · Turbo · Diesel"},{text:"Kolkata ex-showroom · May 2026"}];
+const BADGES=[{text:"From ₹8.00L",gold:true},{text:"5-Star Bharat NCAP"},{text:"Level 2 ADAS from HX5"},{text:"3 Engines · Petrol · Turbo · Diesel"},{text:"Kolkata ex-showroom · June 2026"}];
 
 const G1={icon:"🚀",label:"1.0T DCT",title:"1.0L Turbo Petrol — DCT Automatic",sub:"120PS / 172Nm · 18.4 kmpl ARAI · Best performance + ADAS combination",
 variants:[
-  {name:"HX10 Turbo DCT",sub:"Top Venue · Bose · dual screens · 360° camera · everything",price:"₹14.56L",
+  {name:"HX10 Turbo DCT",sub:"Top Venue · Bose · dual screens · 360° camera · everything",price:"₹14.65L",
    features:[
     {cat:"Engine",name:"1.0L T-GDi 120PS / 172Nm",note:"37PS more than 1.2L NA · 7-speed DCT auto · paddle shifters"},
     {cat:"Safety",name:"5-Star Bharat NCAP",note:"India's toughest crash test — certified"},
@@ -178,12 +178,12 @@ variants:[
     {cat:"Exterior",name:"ORVM Turn Indicators + Auto Headlamps",note:"Full premium exterior pack"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"HX8 Turbo DCT",sub:"Step down from HX10 — ₹12.89L",price:"₹12.89L",
+  {name:"HX8 Turbo DCT",sub:"Step down from HX10 — ₹13.00L",price:"₹13.00L",
    missing:[
     {cat:"Infotainment",name:"No Bose Audio",note:"Standard audio system — significantly less premium sound experience"},
     {cat:"Safety",name:"No 360° Camera",note:"Rear camera only — no bird's eye view for tight parking"},
    ]},
-  {name:"HX8 Turbo MT",sub:"Manual version of HX8 — ₹11.81L",price:"₹11.81L",
+  {name:"HX8 Turbo MT",sub:"Manual version of HX8 — ₹11.91L",price:"₹11.91L",
    missing:[
     {cat:"Engine",name:"6-speed Manual (not DCT)",note:"Must operate clutch in city traffic — no auto shifts"},
     {cat:"Engine",name:"No Paddle Shifters",note:"No steering wheel gear control"},
@@ -194,7 +194,7 @@ variants:[
     {cat:"Safety",name:"No Built-in Dashcam",note:"No drive recorder — no accident evidence"},
     {cat:"Infotainment",name:"Single 10.25-inch Screen (not Dual)",note:"Single screen only — no dedicated digital driver cluster"},
    ]},
-  {name:"HX5 Turbo DCT",sub:"Entry ADAS DCT — ₹10.07L",price:"₹10.07L",
+  {name:"HX5 Turbo DCT",sub:"Entry ADAS DCT — ₹10.92L",price:"₹10.92L",
    missing:[
     {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed every time to charge"},
     {cat:"Comfort",name:"No Drive Modes",note:"No Sport/Eco/Normal selection — single driving character"},
@@ -202,7 +202,7 @@ variants:[
     {cat:"Infotainment",name:"No BlueLink Connected Car",note:"No remote start, no live tracking, no OTA updates"},
     {cat:"Exterior",name:"16-inch Alloys (not 17-inch)",note:"Smaller alloy wheels — less commanding presence"},
    ]},
-  {name:"HX5 Turbo MT",sub:"Entry turbo manual — ₹9.14L",price:"₹9.14L",
+  {name:"HX5 Turbo MT",sub:"Entry turbo manual — ₹9.90L",price:"₹9.90L",
    missing:[
     {cat:"Engine",name:"6-speed Manual (not DCT)",note:"Must use clutch in stop-go city traffic"},
     {cat:"Engine",name:"No Paddle Shifters",note:"No steering wheel gear control"},
@@ -211,7 +211,7 @@ variants:[
 
 const G2={icon:"⛽",label:"1.2L Petrol",title:"1.2L NA Petrol — Manual",sub:"83PS / 114.7Nm · 20.0 kmpl ARAI · 2 variants · HX2 and HX4",
 variants:[
-  {name:"HX4 (1.2L MT)",sub:"Top 1.2L variant",price:"₹8.80L",
+  {name:"HX4 (1.2L MT)",sub:"Top 1.2L variant",price:"₹9.00L",
    features:[
     {cat:"Engine",name:"1.2L NA 83PS / 114.7Nm",note:"Naturally aspirated · 5-speed MT · 20.0 kmpl ARAI"},
     {cat:"Safety",name:"5-Star Bharat NCAP",note:"India's safest compact SUV — certified"},
@@ -238,7 +238,7 @@ variants:[
 
 const G3={icon:"🛢️",label:"Diesel",title:"1.5L Diesel — MT & AT",sub:"116PS / 250Nm · MT 18.3 kmpl · AT 18.3 kmpl · Best for highway drivers doing 1,500+ km/month",
 variants:[
-  {name:"HX10 Diesel AT",sub:"Top diesel · full features · automatic",price:"₹15.52L",
+  {name:"HX10 Diesel AT",sub:"Top diesel · full features · automatic",price:"₹15.65L",
    features:[
     {cat:"Engine",name:"1.5L U2 CRDi 116PS / 250Nm",note:"Diesel torque — overtaking and highway driving feels effortless · 6-speed TC auto"},
     {cat:"Safety",name:"5-Star Bharat NCAP + Level 2 ADAS",note:"Certified crash safety + 16 driver assistance functions"},
@@ -250,23 +250,23 @@ variants:[
     {cat:"Infotainment",name:"Wireless CarPlay + BlueLink 60+",note:"No cable + full connected car suite"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"HX7 Diesel MT",sub:"Step down from HX10 — ₹12.51L",price:"₹12.51L",
+  {name:"HX7 Diesel MT",sub:"Step down from HX10 — ₹12.76L",price:"₹12.76L",
    missing:[
     {cat:"Engine",name:"Manual Gearbox (not 6-spd AT)",note:"6-speed manual — must operate clutch; no auto convenience"},
     {cat:"Comfort",name:"No Ventilated Front Seats",note:"No forced-air seat cooling — uncomfortable in summer"},
     {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed to charge phone"},
    ]},
-  {name:"HX5 Diesel AT",sub:"Step down from HX7 — ₹11.59L",price:"₹11.59L",
+  {name:"HX5 Diesel AT",sub:"Step down from HX7 — ₹11.88L",price:"₹11.88L",
    missing:[
     {cat:"Infotainment",name:"Single 8-inch Screen (not Dual 10.25-inch)",note:"Smaller single screen with wired CarPlay — not wireless"},
     {cat:"Infotainment",name:"No BlueLink Connected Car",note:"No remote start, no live tracking, no OTA updates"},
     {cat:"Comfort",name:"No Ventilated Seats",note:"No seat cooling — standard fabric seats only"},
    ]},
-  {name:"HX5 Diesel MT",sub:"Step down from HX5 AT — ₹10.64L",price:"₹10.64L",
+  {name:"HX5 Diesel MT",sub:"Step down from HX5 AT — ₹10.94L",price:"₹10.94L",
    missing:[
     {cat:"Engine",name:"Manual Gearbox (not AT)",note:"6-speed manual — must operate clutch in all conditions"},
    ]},
-  {name:"HX2 Diesel MT",sub:"Base diesel — ₹9.70L",price:"₹9.70L",
+  {name:"HX2 Diesel MT",sub:"Base diesel — ₹9.95L",price:"₹9.95L",
    missing:[
     {cat:"Safety",name:"No Level 2 ADAS",note:"No driver assistance functions — no forward collision, no lane assist"},
     {cat:"Comfort",name:"No Sunroof",note:"No open-sky option"},
@@ -279,13 +279,13 @@ const GROUPS=[G1,G2,G3];
 const VERDICT_INTRO="Six picks across the all-new Venue range.";
 const VERDICTS=[
   {label:"Entry Safe SUV",title:"HX2 1.2L MT",body:"5-Star Bharat NCAP, 6 airbags, ESC, rear AC vents. The safest entry compact SUV in India.",price:"₹8.00L · 1.2 MT",best:false},
-  {label:"Best Value",title:"HX5 Turbo MT",body:"Level 2 ADAS, sunroof, auto climate, push-start, cruise control, 8-inch screen — all from ₹9.14L.",price:"₹9.14L · 1.0T MT",best:true},
-  {label:"Auto Pick",title:"HX5 Turbo DCT",body:"Level 2 ADAS + DCT auto + paddle shifters. Smooth city driving with full safety.",price:"₹10.07L · 1.0T DCT",best:false},
-  {label:"Premium Pick",title:"HX8 Turbo DCT",body:"Dual screens, wireless charger, ventilated seats, dashcam, drive modes, BlueLink. Nearly complete.",price:"₹12.89L · 1.0T DCT",best:false},
-  {label:"Top Venue",title:"HX10 Turbo DCT",body:"Bose audio, 360° camera, dual screens, full ADAS, BlueLink. Absolutely complete.",price:"₹14.56L · 1.0T DCT",best:false},
-  {label:"Diesel Highway",title:"HX7 Diesel MT",body:"250Nm diesel torque, dual screens, BlueLink, ADAS, ventilated seats. Best for 1,500+ km/month highway users.",price:"₹12.51L · Diesel MT",best:false},
+  {label:"Best Value",title:"HX5 Turbo MT",body:"Level 2 ADAS, sunroof, auto climate, push-start, cruise control, 8-inch screen — all from ₹9.90L.",price:"₹9.90L · 1.0T MT",best:true},
+  {label:"Auto Pick",title:"HX5 Turbo DCT",body:"Level 2 ADAS + DCT auto + paddle shifters. Smooth city driving with full safety.",price:"₹10.92L · 1.0T DCT",best:false},
+  {label:"Premium Pick",title:"HX8 Turbo DCT",body:"Dual screens, wireless charger, ventilated seats, dashcam, drive modes, BlueLink. Nearly complete.",price:"₹13.00L · 1.0T DCT",best:false},
+  {label:"Top Venue",title:"HX10 Turbo DCT",body:"Bose audio, 360° camera, dual screens, full ADAS, BlueLink. Absolutely complete.",price:"₹14.65L · 1.0T DCT",best:false},
+  {label:"Diesel Highway",title:"HX7 Diesel MT",body:"250Nm diesel torque, dual screens, BlueLink, ADAS, ventilated seats. Best for 1,500+ km/month highway users.",price:"₹12.76L · Diesel MT",best:false},
 ];
-const VERDICT_TIP="<strong>HX5 Turbo MT at ₹9.14L</strong> — Level 2 ADAS and sunroof at the lowest price in the Venue range. Want auto → HX5 Turbo DCT at ₹10.07L. Highway drivers → HX7 Diesel MT at ₹12.51L. All features → HX8 DCT at ₹12.89L.";
+const VERDICT_TIP="<strong>HX5 Turbo MT at ₹9.90L</strong> — Level 2 ADAS and sunroof at the lowest price in the Venue range. Want auto → HX5 Turbo DCT at ₹10.92L. Highway drivers → HX7 Diesel MT at ₹12.76L. All features → HX8 DCT at ₹13.00L.";
 
 </script>
 <script>

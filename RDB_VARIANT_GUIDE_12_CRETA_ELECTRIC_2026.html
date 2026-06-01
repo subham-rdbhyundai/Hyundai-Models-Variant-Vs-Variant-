@@ -145,14 +145,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 
 const MODEL_H1="Hyundai Creta<br><em>Electric</em>";const GHOST="EV";
 const TAGLINE="India's Best-Selling Electric SUV · 473km Range · V2L Power Export · Level 2 ADAS · Fast Charge · 8-Year Battery Warranty";
-const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const LAST_UPDATED="June 2026";const CITY="Kolkata";
 const SPEC_NOTE="Two battery options: 42kWh (390km ARAI) · 51.4kWh (473km ARAI). V2L: export up to 3.6kW to power appliances. Level 2 ADAS all variants. 3 yr car + 8 yr battery warranty.";
 const SPECS=[{val:"473km",lbl:"ARAI Range",note:"51.4kWh pack"},{val:"V2L",lbl:"Power Export",note:"3.6kW · power anything from car"},{val:"Level 2",lbl:"ADAS",note:"All variants"},{val:"8 Yrs",lbl:"Battery Warranty",note:"160,000km"}];
-const BADGES=[{text:"From ₹18.02L",gold:true},{text:"V2L — Power Appliances from Car"},{text:"473km ARAI Range (Long Pack)"},{text:"Level 2 ADAS — All Variants"},{text:"8-Year Battery Warranty"},{text:"Kolkata ex-showroom · May 2026"}];
+const BADGES=[{text:"From ₹18.03L",gold:true},{text:"V2L — Power Appliances from Car"},{text:"473km ARAI Range (Long Pack)"},{text:"Level 2 ADAS — All Variants"},{text:"8-Year Battery Warranty"},{text:"Kolkata ex-showroom · June 2026"}];
 
 const G1={icon:"⚡",label:"51.4kWh Long Range",title:"51.4kWh Long Range Pack — 473km ARAI",sub:"Real world ~390–420km · Premium for long-distance confidence · No range anxiety",
 variants:[
-  {name:"Excellence 51.4kWh LR",sub:"Top Creta Electric · Every feature",price:"₹23.53L",
+  {name:"Excellence 51.4kWh LR",sub:"Top Creta Electric · Every feature",price:"₹23.67L",
    features:[
     {cat:"Battery & Range",name:"51.4kWh Battery",note:"473km ARAI · Real world ~390–420km · Kolkata to Haldia dozens of times over"},
     {cat:"Battery & Range",name:"V2L — Vehicle to Load (3.6kW)",note:"Plug your TV, laptop, fan or any appliance directly into the car — camping, power cuts, outdoor events"},
@@ -182,7 +182,7 @@ variants:[
     {cat:"Ownership",name:"Battery Warranty",note:"8 years / 160,000km — industry leading"},
     {cat:"Ownership",name:"Running Cost",note:"~₹1.50–2.00/km on home electricity vs ₹9+/km on petrol"},
    ]},
-  {name:"Techno 51.4kWh LR",sub:"Step down — ₹21.27L",price:"₹21.27L",
+  {name:"Techno 51.4kWh LR",sub:"Step down — ₹21.54L",price:"₹21.54L",
    missing:[
     {cat:"Infotainment",name:"No Bose Audio",note:"Standard speakers — less premium and immersive sound quality"},
     {cat:"Safety",name:"No Dashcam",note:"No drive recorder — no accident evidence"},
@@ -210,12 +210,12 @@ variants:[
     {cat:"Infotainment",name:"Dual Screens + Bose + BlueLink EV",note:"Twin displays + Bose + full connected car"},
     {cat:"Ownership",name:"Battery Warranty",note:"8 years / 160,000km"},
    ]},
-  {name:"Premium 42kWh",sub:"Step down — ₹19.06L",price:"₹19.06L",
+  {name:"Premium 42kWh",sub:"Step down — ₹20.00L",price:"₹20.00L",
    missing:[
     {cat:"Infotainment",name:"No Bose Audio",note:"Standard speakers — less premium sound"},
     {cat:"Safety",name:"No Dashcam",note:"No drive recorder"},
    ]},
-  {name:"Executive 42kWh",sub:"Entry Creta Electric — ₹18.02L",price:"₹18.02L",
+  {name:"Executive 42kWh",sub:"Entry Creta Electric — ₹18.03L",price:"₹18.03L",
    missing:[
     {cat:"Safety",name:"No 360° Camera",note:"Rear camera only — no bird's eye parking view"},
     {cat:"Comfort",name:"No Ventilated + Heated Seats",note:"Standard fabric seats — no cooling or heating"},
@@ -227,12 +227,12 @@ variants:[
 const GROUPS=[G1,G2];
 const VERDICT_INTRO="Four recommendations for EV buyers.";
 const VERDICTS=[
-  {label:"Entry EV",title:"42kWh Executive",body:"390km range, V2L, ADAS, dual screens, sunroof, BlueLink. Every essential EV feature at ₹18.02L.",price:"₹18.02L · 42kWh",best:false},
-  {label:"Best Value",title:"42kWh Premium",body:"Adds 360° camera, wireless charger, ventilated seats. The complete everyday EV package.",price:"₹19.06L · 42kWh",best:true},
-  {label:"Long Range Pick",title:"51.4kWh Techno LR",body:"473km ARAI (~390–420km real). 360° camera, wireless charger, ventilated seats. No range anxiety.",price:"₹21.27L · 51.4kWh",best:false},
-  {label:"Ultimate EV",title:"51.4kWh Excellence LR",body:"473km range, Bose audio, dashcam, 18-inch alloys, all features. The most complete Creta Electric.",price:"₹23.53L · 51.4kWh",best:false},
+  {label:"Entry EV",title:"42kWh Executive",body:"390km range, V2L, ADAS, dual screens, sunroof, BlueLink. Every essential EV feature at ₹18.03L.",price:"₹18.03L · 42kWh",best:false},
+  {label:"Best Value",title:"42kWh Premium",body:"Adds 360° camera, wireless charger, ventilated seats. The complete everyday EV package.",price:"₹20.00L · 42kWh",best:true},
+  {label:"Long Range Pick",title:"51.4kWh Techno LR",body:"473km ARAI (~390–420km real). 360° camera, wireless charger, ventilated seats. No range anxiety.",price:"₹21.54L · 51.4kWh",best:false},
+  {label:"Ultimate EV",title:"51.4kWh Excellence LR",body:"473km range, Bose audio, dashcam, 18-inch alloys, all features. The most complete Creta Electric.",price:"₹23.67L · 51.4kWh",best:false},
 ];
-const VERDICT_TIP="<strong>Have home charging → 42kWh Premium at ₹19.06L</strong> covers all daily needs (320km+ real range). Frequent long trips → 51.4kWh Techno at ₹21.27L. The 51.4kWh pack adds ~₹1.6L over 42kWh and gives ~70km more real range — worth it if you drive Kolkata to Haldia and back regularly.";
+const VERDICT_TIP="<strong>Have home charging → 42kWh Premium at ₹20.00L</strong> covers all daily needs (320km+ real range). Frequent long trips → 51.4kWh Techno at ₹21.54L. The 51.4kWh pack adds ~₹1.6L over 42kWh and gives ~70km more real range — worth it if you drive Kolkata to Haldia and back regularly.";
 
 </script>
 <script>

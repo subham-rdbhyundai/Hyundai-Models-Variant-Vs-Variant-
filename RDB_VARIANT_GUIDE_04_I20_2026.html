@@ -145,14 +145,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);f
 
 const MODEL_H1="Hyundai<br><em>i20</em>";const GHOST="i20";
 const TAGLINE="Premium Hatchback · 1.2L NA + 1.0L Turbo · IVT CVT (Only in Class) · Panoramic Sunroof · Bose 8-Speaker · Knight Edition";
-const LAST_UPDATED="May 2026";const CITY="Kolkata";
+const LAST_UPDATED="June 2026";const CITY="Kolkata";
 const SPEC_NOTE="Two engines: 1.2L NA 83PS (MT/IVT) · 1.0L Turbo GDi 120PS (iMT/DCT). Panoramic sunroof from Sportz. Bose 8-speaker from Sportz(O). Dual 10.25-inch screens from Sportz. 3 yrs unlimited km warranty.";
-const SPECS=[{val:"₹5.99L",lbl:"Starts From",note:"Era 1.2 MT"},{val:"120PS",lbl:"Turbo Option",note:"1.0T GDi · 172Nm · DCT/iMT"},{val:"IVT",lbl:"Smooth CVT Auto",note:"Only CVT in class — 1.2L"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
-const BADGES=[{text:"From ₹5.99L",gold:true},{text:"IVT CVT — Only in Class"},{text:"Bose 8-Speaker"},{text:"Panoramic Sunroof"},{text:"Knight Edition Available"},{text:"Kolkata ex-showroom · May 2026"}];
+const SPECS=[{val:"₹6.00L",lbl:"Starts From",note:"Era 1.2 MT"},{val:"120PS",lbl:"Turbo Option",note:"1.0T GDi · 172Nm · DCT/iMT"},{val:"IVT",lbl:"Smooth CVT Auto",note:"Only CVT in class — 1.2L"},{val:"∞ km",lbl:"Warranty",note:"3 Yrs · No cap"}];
+const BADGES=[{text:"From ₹6.00L",gold:true},{text:"IVT CVT — Only in Class"},{text:"Bose 8-Speaker"},{text:"Panoramic Sunroof"},{text:"Knight Edition Available"},{text:"Kolkata ex-showroom · June 2026"}];
 
 const G1={icon:"⛽",label:"1.2L Petrol",title:"1.2L Petrol — MT & IVT (CVT)",sub:"83PS / 114Nm · MT 20.35 kmpl · IVT 19.65 kmpl · IVT is the only CVT automatic in this class",
 variants:[
-  {name:"Asta(O) Knight IVT",sub:"Absolute top — every feature + Knight black edition",price:"₹10.44L",
+  {name:"Asta(O) Knight IVT",sub:"Absolute top — every feature + Knight black edition",price:"₹9.35L",
    features:[
     {cat:"Engine",name:"1.2L Kappa 4-cyl · 83PS / 114Nm",note:"IVT (CVT) automatic — smoothest in class, only CVT available here"},
     {cat:"Safety",name:"6 Airbags",note:"All 6 — every variant"},
@@ -184,26 +184,26 @@ variants:[
     {cat:"Interior",name:"Steering-Mounted Audio + Call Controls",note:"Control everything without moving hands from wheel"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"Asta(O) IVT",sub:"Step down from Knight — ₹10.44L",price:"₹10.44L",
+  {name:"Asta(O) IVT",sub:"Step down from Knight — ₹9.35L",price:"₹9.35L",
    missing:[
     {cat:"Exterior",name:"No Knight Black Pack",note:"Standard colours only — no blacked-out exterior treatment"},
     {cat:"Exterior",name:"Standard 16-inch Alloys (not black)",note:"Normal silver alloys — not the exclusive Knight black alloys"},
    ]},
-  {name:"Sportz(O) MT",sub:"Step down from Asta(O) — ₹8.99L",price:"₹8.99L",
+  {name:"Sportz(O) MT",sub:"Step down from Asta(O) — ₹8.34L",price:"₹8.34L",
    missing:[
     {cat:"Infotainment",name:"No BlueLink Connected Car",note:"No remote start, no live tracking, no OTA updates"},
     {cat:"Infotainment",name:"No Dashcam",note:"No drive recorder — no accident evidence"},
     {cat:"Exterior",name:"No Auto Headlamps",note:"Must manually switch on headlamps in the dark"},
     {cat:"Engine",name:"Manual Gearbox (not IVT CVT)",note:"5-speed manual — must operate clutch in city traffic"},
    ]},
-  {name:"Sportz MT",sub:"Step down from Sportz(O) — ₹8.28L",price:"₹8.28L",
+  {name:"Sportz MT",sub:"Step down from Sportz(O) — ₹7.80L",price:"₹7.80L",
    missing:[
     {cat:"Infotainment",name:"No Bose 8-Speaker Audio",note:"Standard 4-speaker audio — noticeably less immersive sound"},
     {cat:"Comfort",name:"No Wireless Phone Charger",note:"Cable needed every time to charge phone"},
     {cat:"Comfort",name:"No Cruise Control",note:"Must press accelerator on every highway drive"},
     {cat:"Interior",name:"No Leather Steering Wheel",note:"Standard plastic grip — less premium touch"},
    ]},
-  {name:"Magna IVT",sub:"Step down from Sportz — ₹8.00L",price:"₹8.00L",
+  {name:"Magna IVT",sub:"Step down from Sportz — ₹7.00L",price:"₹7.00L",
    missing:[
     {cat:"Comfort",name:"No Panoramic Sunroof",note:"No open-sky option — cabin feels more closed in"},
     {cat:"Infotainment",name:"8-inch Screen Only (not Dual 10.25-inch)",note:"Single smaller screen — not the twin premium display"},
@@ -211,11 +211,11 @@ variants:[
     {cat:"Exterior",name:"14-inch Alloys (not 16-inch)",note:"Smaller alloy wheels — less premium stance"},
     {cat:"Safety",name:"No Rear Parking Camera",note:"Reversing by sensors only — no camera image"},
    ]},
-  {name:"Magna Executive MT",sub:"Step down from Magna IVT — ₹7.60L",price:"₹7.60L",
+  {name:"Magna Executive MT",sub:"Step down from Magna IVT — ₹6.75L",price:"₹6.75L",
    missing:[
     {cat:"Engine",name:"Manual Gearbox (not IVT CVT)",note:"5-speed manual — must operate clutch in city traffic"},
    ]},
-  {name:"Era MT",sub:"Base variant — ₹5.99L",price:"₹5.99L",
+  {name:"Era MT",sub:"Base variant — ₹6.00L",price:"₹6.00L",
    missing:[
     {cat:"Comfort",name:"No Auto Climate Control",note:"Manual AC only — adjust temperature and fan speed yourself"},
     {cat:"Comfort",name:"No Rear AC Vents",note:"Rear passengers get no direct airflow — uncomfortable in summer"},
@@ -229,7 +229,7 @@ variants:[
 
 const G2={icon:"🚀",label:"1.0L Turbo",title:"1.0L Turbo Petrol — iMT & DCT",sub:"120PS / 172Nm · iMT 18.20 kmpl · DCT 18.80 kmpl · 37PS more than standard 1.2L",
 variants:[
-  {name:"Asta(O) DCT",sub:"Top turbo · Every feature + 7-speed DCT",price:"₹11.53L",
+  {name:"Asta(O) DCT",sub:"Top turbo · Every feature + 7-speed DCT",price:"₹10.63L",
    features:[
     {cat:"Engine",name:"1.0L T-GDi 120PS / 172Nm",note:"37PS more than 1.2L NA · 7-speed DCT — lightning-fast automatic shifts"},
     {cat:"Engine",name:"Paddle Shifters",note:"Manual gear changes from behind the steering wheel for sporty driving"},
@@ -246,11 +246,11 @@ variants:[
     {cat:"Exterior",name:"Full LED Headlamps + 16-inch Alloys",note:"Premium lighting and wheels"},
     {cat:"Ownership",name:"Warranty",note:"3 years · Unlimited kilometres"},
    ]},
-  {name:"Sportz(O) DCT",sub:"Step down from Asta(O) DCT — ₹10.44L",price:"₹10.44L",
+  {name:"Sportz(O) DCT",sub:"Step down from Asta(O) DCT — ₹9.35L",price:"₹9.35L",
    missing:[
     {cat:"Infotainment",name:"No BlueLink Connected Car",note:"No remote start, no live tracking, no OTA updates"},
    ]},
-  {name:"Sportz(O) iMT",sub:"Step down from Sportz(O) DCT — ₹9.76L",price:"₹9.76L",
+  {name:"Sportz(O) iMT",sub:"Step down from Sportz(O) DCT — ₹9.26L",price:"₹9.26L",
    missing:[
     {cat:"Engine",name:"iMT (not DCT)",note:"6-speed iMT — no clutch pedal but manual gear selection needed; DCT is fully automatic"},
     {cat:"Engine",name:"No Paddle Shifters",note:"No manual gear control from steering wheel — iMT only"},
@@ -266,14 +266,14 @@ variants:[
 const GROUPS=[G1,G2];
 const VERDICT_INTRO="Six clear recommendations across the i20 range.";
 const VERDICTS=[
-  {label:"Budget Entry",title:"Era MT",body:"6 airbags, ESC, TPMS — all safety standard. The lowest-cost way into the i20 premium hatchback.",price:"₹5.99L · 1.2 MT",best:false},
-  {label:"Best Value",title:"Sportz(O) MT",body:"Panoramic sunroof · Dual 10.25-inch screens · Bose 8-speaker · wireless CarPlay · auto climate · 16-inch alloys. The i20 sweet spot.",price:"₹8.99L · 1.2 MT",best:true},
-  {label:"Smooth Auto",title:"Asta(O) IVT",body:"IVT CVT — the smoothest automatic in this class (rivals only have AMT). Panoramic sunroof, Bose, BlueLink, dashcam.",price:"₹10.44L · 1.2 IVT",best:false},
-  {label:"Performance Pick",title:"Sportz(O) DCT",body:"120PS turbo + 7-speed DCT paddle shifters. Dual screens, Bose, wireless CarPlay. Sports car in a hatchback.",price:"₹10.44L · 1.0T DCT",best:false},
-  {label:"Knight Edition",title:"Asta(O) Knight IVT",body:"All Asta features + full black exterior — black alloys, grille, roof, mirrors. The boldest i20.",price:"₹10.44L · 1.2 IVT",best:false},
-  {label:"Top Turbo",title:"Asta(O) DCT",body:"120PS turbo, DCT, BlueLink, Bose, panoramic sunroof. The definitive i20.",price:"₹11.53L · 1.0T DCT",best:false},
+  {label:"Budget Entry",title:"Era MT",body:"6 airbags, ESC, TPMS — all safety standard. The lowest-cost way into the i20 premium hatchback.",price:"₹6.00L · 1.2 MT",best:false},
+  {label:"Best Value",title:"Sportz(O) MT",body:"Panoramic sunroof · Dual 10.25-inch screens · Bose 8-speaker · wireless CarPlay · auto climate · 16-inch alloys. The i20 sweet spot.",price:"₹8.34L · 1.2 MT",best:true},
+  {label:"Smooth Auto",title:"Asta(O) IVT",body:"IVT CVT — the smoothest automatic in this class (rivals only have AMT). Panoramic sunroof, Bose, BlueLink, dashcam.",price:"₹9.35L · 1.2 IVT",best:false},
+  {label:"Performance Pick",title:"Sportz(O) DCT",body:"120PS turbo + 7-speed DCT paddle shifters. Dual screens, Bose, wireless CarPlay. Sports car in a hatchback.",price:"₹9.35L · 1.0T DCT",best:false},
+  {label:"Knight Edition",title:"Asta(O) Knight IVT",body:"All Asta features + full black exterior — black alloys, grille, roof, mirrors. The boldest i20.",price:"₹9.35L · 1.2 IVT",best:false},
+  {label:"Top Turbo",title:"Asta(O) DCT",body:"120PS turbo, DCT, BlueLink, Bose, panoramic sunroof. The definitive i20.",price:"₹10.63L · 1.0T DCT",best:false},
 ];
-const VERDICT_TIP="<strong>Sportz(O) MT at ₹8.99L</strong> delivers every headline i20 feature — Bose, sunroof, dual screens, wireless CarPlay — at the right price. For smooth city auto: Asta(O) IVT at ₹10.44L. For driving excitement: Sportz(O) DCT at ₹10.44L.";
+const VERDICT_TIP="<strong>Sportz(O) MT at ₹8.34L</strong> delivers every headline i20 feature — Bose, sunroof, dual screens, wireless CarPlay — at the right price. For smooth city auto: Asta(O) IVT at ₹9.35L. For driving excitement: Sportz(O) DCT at ₹9.35L.";
 
 </script>
 <script>
